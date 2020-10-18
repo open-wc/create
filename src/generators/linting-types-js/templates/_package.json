@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "lint:types": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "~4.0.3"
+  }
+}
