@@ -1,7 +1,8 @@
-# Change Log
+# Changelog
 
-All notable changes to this project will be documented in this file.
-See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+### 0.37.1 (2020-10-18)
 
 # [0.36.0](https://github.com/open-wc/open-wc/compare/@open-wc/create@0.35.0...@open-wc/create@0.36.0) (2020-10-05)
 
