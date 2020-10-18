@@ -1,6 +1,6 @@
 {
   "name": "@open-wc/create",
-  "version": "0.36.0",
+  "version": "0.37.0",
   "publishConfig": {
     "access": "public"
   },
@@ -21,6 +21,7 @@
     "lint": "npm run lint:eslint && npm run lint:prettier",
     "lint:eslint": "eslint --ext .ts,.js,.mjs,.cjs .",
     "lint:prettier": "prettier \"**/*.{ts,js,mjs,cjs,md}\" --check --ignore-path .eslintignore",
+    "release": "standard-version && git push --follow-tags origin master && npm publish",
     "start": "npm run build && node ./dist/create.js",
     "test": "npm run test:node",
     "test:node": "mocha --require @babel/register",
@@ -57,9 +58,11 @@
     "chai-fs": "^2.0.0",
     "eslint": "^7.11.0",
     "eslint-config-prettier": "^6.13.0",
+    "lit-element": "^2.4.0",
     "mocha": "^6.2.2",
     "onchange": "^5.2.0",
-    "prettier": "^2.1.2"
+    "prettier": "^2.1.2",
+    "standard-version": "^9.0.0"
   },
   "prettier": {
     "singleQuote": true,
