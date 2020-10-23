@@ -8,11 +8,13 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/open-wc/open-wc.git",
-    "directory": "packages/create"
+    "url": "https://github.com/open-wc/create.git"
   },
+  "bugs": {
+    "url": "https://github.com/open-wc/create/issues"
+  },  
   "author": "open-wc",
-  "homepage": "https://github.com/open-wc/open-wc/tree/master/packages/create",
+  "homepage": "https://github.com/open-wc/create",
   "bin": {
     "create-open-wc": "./dist/create.js"
   },
