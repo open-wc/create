@@ -54,7 +54,7 @@
     "@babel/preset-env": "^7.9.0",
     "@babel/register": "^7.9.0",
     "@open-wc/building-rollup": "^1.9.3",
-    "@open-wc/eslint-config": "^3.0.0",
+    "@open-wc/eslint-config": "^4.0.0",
     "babel-plugin-transform-dynamic-import": "^2.1.0",
     "chai": "^4.2.0",
     "chai-fs": "^2.0.0",
