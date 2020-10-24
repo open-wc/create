@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.37.3](https://github.com/open-wc/create/compare/v0.37.2...v0.37.3) (2020-10-24)
+
+
+### Features
+
+* update eslint config ([fd7329d](https://github.com/open-wc/create/commit/fd7329d48690ce51dde3d296c93aad002c0a281e))
+
 ### [0.37.2](https://github.com/open-wc/create/compare/v0.37.1...v0.37.2) (2020-10-24)
 
 ### 0.37.1 (2020-10-18)
