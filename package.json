@@ -1,6 +1,6 @@
 {
   "name": "@open-wc/create",
-  "version": "0.37.1",
+  "version": "0.37.2",
   "publishConfig": {
     "access": "public"
   },
@@ -12,7 +12,7 @@
   },
   "bugs": {
     "url": "https://github.com/open-wc/create/issues"
-  },  
+  },
   "author": "open-wc",
   "homepage": "https://github.com/open-wc/create",
   "bin": {
