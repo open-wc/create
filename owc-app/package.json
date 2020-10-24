@@ -18,7 +18,7 @@
     "lit-html": "^1.0.0"
   },
   "devDependencies": {
-    "@open-wc/eslint-config": "^2.0.0",
+    "@open-wc/eslint-config": "^4.0.0",
     "@web/dev-server": "^0.0.12",
     "husky": "^1.0.0",
     "lint-staged": "^10.0.0",
