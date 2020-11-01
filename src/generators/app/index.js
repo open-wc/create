@@ -41,7 +41,15 @@ export const AppMixin = subclass =>
 
     async execute() {
       console.log(header);
-      const scaffoldOptions = [];
+
+      let scaffoldOptions = [];
+
+      // This is needed as when ovverides is informed, it does not load questions and as
+      // scaffoldOptions is created dinamically on there, they are not generated
+      if (overrides && overrides.features && overrides.scaffoldFilesFor) {
+        scaffoldOptions = overrides.features.filter(feature => feature !== 'linting' && overrides.scaffoldFilesFor.includes(feature))
+      }      
+
       const questions = [
         {
           type: 'select',
