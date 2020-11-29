@@ -45,7 +45,7 @@ export const AppMixin = subclass =>
       let scaffoldOptions = [];
 
       // This is needed as when overrides is informed, it does not load questions and as
-      // scaffoldOptions is created dinamically on there, they are not generated
+      // scaffoldOptions is created dynamically on there, they are not generated
       if (overrides && overrides.features && overrides.scaffoldFilesFor) {
         scaffoldOptions = overrides.features.filter(
           feature => feature !== 'linting' && overrides.scaffoldFilesFor.includes(feature),
