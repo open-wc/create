@@ -33,10 +33,12 @@ describe('processTemplate', () => {
     );
   });
 
-  it('ignores <%= keyName %> in source if not provided as data', async () => {
-    expect(processTemplate('prefix <%= name %> suffix', { foo: 'foo' })).to.equal(
-      'prefix <%= name %> suffix',
-    );
+  it('should throw an error if variable is not defined as data for source <%= keyName %> ', async () => {
+    try {
+      processTemplate('prefix <%= name %> suffix', { foo: 'foo' })
+    } catch(e) {
+      expect(e).to.be.an.instanceof(ReferenceError);
+    }
   });
 });
 

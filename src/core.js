@@ -1,5 +1,5 @@
 /* eslint-disable no-console, import/no-cycle */
-
+import { render } from 'ejs';
 import { spawn } from 'child_process';
 import deepmerge from 'deepmerge';
 import fs from 'fs';
@@ -51,9 +51,7 @@ export function resetVirtualFiles() {
  */
 export function processTemplate(_fileContent, data = {}) {
   let fileContent = _fileContent;
-  Object.keys(data).forEach(key => {
-    fileContent = fileContent.replace(new RegExp(`<%= ${key} %>`, 'g'), data[key]);
-  });
+  fileContent = render(fileContent, data, {debug: false});
   return fileContent;
 }
 
