@@ -1,9 +1,9 @@
 {
   "scripts": {
-    "storybook": "concurrently --kill-others --names tsc,storybook \"npm run tsc:watch\" \"start-storybook --node-resolve --watch --open\"",
-    "storybook:build": "build-storybook"
+    "storybook": "tsc && concurrently -k -r \"tsc --watch --preserveWatchOutput\" \"wds -c .storybook/server.mjs\"",
+    "storybook:build": "tsc && build-storybook"
   },
   "devDependencies": {
-    "@open-wc/demoing-storybook": "^2.0.0"
+    "@web/dev-server-storybook": "^0.3.2"
   }
 }

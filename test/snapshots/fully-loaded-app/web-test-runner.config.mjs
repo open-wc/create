@@ -1,4 +1,9 @@
-export default {
+import baseConfig from './web-dev-server.config.mjs';
+
+export default /** @type {import("@web/test-runner").TestRunnerConfig} */ ({
   files: 'test/**/*.test.js',
-  nodeResolve: true
-};
+
+  /** Reuse options from Web Dev Server config  */
+  nodeResolve: baseConfig.nodeResolve,
+  plugins: [...baseConfig.plugins],
+});

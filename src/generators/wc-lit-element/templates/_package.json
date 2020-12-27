@@ -2,13 +2,13 @@
   "main": "index.js",
   "module": "index.js",
   "scripts": {
-    "start": "web-dev-server --app-index demo/index.html --node-resolve --open --watch"
+    "start": "web-dev-server"
   },
   "dependencies": {
     "lit-html": "^1.1.2",
     "lit-element": "^2.2.1"
   },
   "devDependencies": {
-    "@web/dev-server": "^0.0.12"
+    "@web/dev-server": "^0.1.1"
   }
 }

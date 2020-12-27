@@ -1,9 +1,9 @@
 {
   "scripts": {
-    "test": "tsc && web-test-runner --coverage",
-    "test:watch": "web-test-runner --watch"
+    "test": "tsc && wtr --coverage",
+    "test:watch": "tsc && concurrently -k -r \"tsc --watch --preserveWatchOutput\" \"wtr --watch\""
   },
   "devDependencies": {
-    "@web/test-runner": "^0.7.41"
+    "@web/test-runner": "^0.11.5"
   }
 }
