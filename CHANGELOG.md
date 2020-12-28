@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.37.4](https://github.com/open-wc/create/compare/v0.37.3...v0.37.4) (2020-12-28)
+
+
+### Features
+
+* use WDS storybook and other improvements ([f1cff22](https://github.com/open-wc/create/commit/f1cff22a90e516dce9c1b300c49b4061360a01da))
+
 ### [0.37.3](https://github.com/open-wc/create/compare/v0.37.2...v0.37.3) (2020-10-24)
 
 
