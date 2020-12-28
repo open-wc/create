@@ -1,14 +1,12 @@
 import { html, fixture, expect } from '@open-wc/testing';
 
-import {<%= className %>} from '../src/<%= className %>.js';
+import { <%= className %> } from '../src/<%= className %>.js';
 import '../src/<%= tagName %>.js';
 
 describe('<%= className %>', () => {
   let element: <%= className %>;
   beforeEach(async () => {
-    element = await fixture(html`
-      <<%= tagName %>></<%= tagName %>>
-    `);
+    element = await fixture(html`<<%= tagName %>></<%= tagName %>>`);
   });
 
   it('renders a h1', () => {

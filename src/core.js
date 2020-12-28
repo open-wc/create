@@ -8,6 +8,50 @@ import path from 'path';
 import prompts from 'prompts';
 import Generator from './Generator.js';
 
+// order taken from prettier-package-json
+const pkgJsonOrder = [
+  '$schema',
+  'private',
+  'name',
+  'description',
+  'license',
+  'author',
+  'maintainers',
+  'contributors',
+  'homepage',
+  'repository',
+  'bugs',
+  'version',
+  'type',
+  'workspaces',
+  'main',
+  'module',
+  'browser',
+  'man',
+  'preferGlobal',
+  'bin',
+  'files',
+  'directories',
+  'scripts',
+  'config',
+  'sideEffects',
+  'types',
+  'typings',
+  'optionalDependencies',
+  'dependencies',
+  'bundleDependencies',
+  'bundledDependencies',
+  'peerDependencies',
+  'devDependencies',
+  'keywords',
+  'engines',
+  'engine-strict',
+  'engineStrict',
+  'os',
+  'cpu',
+  'publishConfig',
+];
+
 /**
  *
  * @param {Function[]} mixins
@@ -389,6 +433,20 @@ export function copyTemplateJsonInto(
   const sourceContent = readFileFromPath(toPath);
   if (sourceContent) {
     finalObj = deepmerge(JSON.parse(sourceContent), finalObj, mergeOptions);
+  }
+
+  // sort package.json keys
+  if (toPath.endsWith('package.json')) {
+    const temp = {};
+    const indexOf = k => {
+      const i = pkgJsonOrder.indexOf(k);
+      return i === -1 ? Infinity : 0;
+    };
+    const entries = Object.entries(finalObj).sort(([a], [b]) => indexOf(a) - indexOf(b));
+    for (const [k, v] of entries) {
+      temp[k] = v;
+    }
+    finalObj = temp;
   }
 
   writeFileToPath(toPath, JSON.stringify(finalObj, null, 2));

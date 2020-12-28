@@ -5,7 +5,6 @@ export class ScaffoldApp extends LitElement {
   static get properties() {
     return {
       title: { type: String },
-      page: { type: String },
     };
   }
 
@@ -22,6 +21,7 @@ export class ScaffoldApp extends LitElement {
         max-width: 960px;
         margin: 0 auto;
         text-align: center;
+        background-color: var(--scaffold-app-background-color);
       }
 
       main {
@@ -53,11 +53,16 @@ export class ScaffoldApp extends LitElement {
     `;
   }
 
+  constructor() {
+    super();
+    this.title = 'My app';
+  }
+
   render() {
     return html`
       <main>
         <div class="logo">${openWcLogo}</div>
-        <h1>My app</h1>
+        <h1>${this.title}</h1>
 
         <p>Edit <code>src/ScaffoldApp.js</code> and save to reload.</p>
         <a

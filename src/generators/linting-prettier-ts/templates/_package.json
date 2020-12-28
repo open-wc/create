@@ -1,8 +1,4 @@
 {
-  "scripts": {
-    "lint:prettier": "prettier \"**/*.js\" \"**/*.ts\" --check --ignore-path .gitignore",
-    "format:prettier": "prettier \"**/*.js\" \"**/*.ts\" --write --ignore-path .gitignore"
-  },
   "devDependencies": {
     "prettier": "^2.0.4",
     "eslint-config-prettier": "^6.11.0"

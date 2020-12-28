@@ -1,9 +1,9 @@
 {
   "scripts": {
-    "storybook": "start-storybook",
+    "storybook": "web-dev-server -c .storybook/server.mjs",
     "storybook:build": "build-storybook"
   },
   "devDependencies": {
-    "@open-wc/demoing-storybook": "^2.0.0"
+    "@web/dev-server-storybook": "^0.3.2"
   }
 }
