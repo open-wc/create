@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.37.5](https://github.com/open-wc/create/compare/v0.37.4...v0.37.5) (2021-01-04)
+
+
+### Features
+
+* add EJS as template engine and force all label to be filled ([6f42933](https://github.com/open-wc/create/commit/6f42933c289103e4498e2a249785a353510b78c4))
+
 ### [0.37.4](https://github.com/open-wc/create/compare/v0.37.3...v0.37.4) (2020-12-28)
 
 
