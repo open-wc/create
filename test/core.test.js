@@ -35,8 +35,8 @@ describe('processTemplate', () => {
 
   it('should throw an error if variable is not defined as data for source <%= keyName %> ', async () => {
     try {
-      processTemplate('prefix <%= name %> suffix', { foo: 'foo' })
-    } catch(e) {
+      processTemplate('prefix <%= name %> suffix', { foo: 'foo' });
+    } catch (e) {
       expect(e).to.be.an.instanceof(ReferenceError);
     }
   });
