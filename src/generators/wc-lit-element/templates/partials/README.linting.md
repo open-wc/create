@@ -1,26 +1,26 @@
 ## Linting with ESLint, Prettier, and Types
 To scan the project for linting errors, run
 ```bash
-<%= scriptRunCommand %> lint
+npm run lint
 ```
 
 You can lint with ESLint and Prettier individually as well
 ```bash
-<%= scriptRunCommand %> lint:eslint
+npm run lint:eslint
 ```
 ```bash
-<%= scriptRunCommand %> lint:prettier
+npm run lint:prettier
 ```
 
 To automatically fix many linting errors, run
 ```bash
-<%= scriptRunCommand %> format
+npm run format
 ```
 
 You can format using ESLint and Prettier individually as well
 ```bash
-<%= scriptRunCommand %> format:eslint
+npm run format:eslint
 ```
 ```bash
-<%= scriptRunCommand %> format:prettier
+npm run format:prettier
 ```
