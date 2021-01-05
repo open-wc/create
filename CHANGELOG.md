@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.37.6](https://github.com/open-wc/create/compare/v0.37.5...v0.37.6) (2021-01-05)
+
+
+### Bug Fixes
+
+* ejs render issue by hard coding npm run in readmes ([0500372](https://github.com/open-wc/create/commit/0500372233425613d74c3c1a14678cb1a1e49bca))
+
 ### [0.37.5](https://github.com/open-wc/create/compare/v0.37.4...v0.37.5) (2021-01-04)
 
 
