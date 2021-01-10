@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.37.7](https://github.com/open-wc/create/compare/v0.37.6...v0.37.7) (2021-01-10)
+
+
+### Bug Fixes
+
+* correctly order storybook plugins ([4251470](https://github.com/open-wc/create/commit/4251470e172d9780621039e6b2c883d2f3ea0aca))
+
 ### [0.37.6](https://github.com/open-wc/create/compare/v0.37.5...v0.37.6) (2021-01-05)
 
 
