@@ -21,7 +21,6 @@ export class <%= className %> extends LitElement {
         max-width: 960px;
         margin: 0 auto;
         text-align: center;
-        background-color: var(--<%= tagName %>-background-color);
       }
 
       main {
