@@ -4,7 +4,7 @@ export const LintingEsLintMixin = subclass =>
       await super.execute();
 
       this.copyTemplateJsonInto(
-        `${__dirname}/templates/_package.json`,
+        `${__dirname}/templates/package.json`,
         this.destinationPath('package.json'),
       );
     }

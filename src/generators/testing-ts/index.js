@@ -7,7 +7,7 @@ export const TsTestingMixin = subclass =>
       await super.execute();
 
       this.copyTemplateJsonInto(
-        `${__dirname}/templates/_package.json`,
+        `${__dirname}/templates/package.json`,
         this.destinationPath('package.json'),
       );
     }
@@ -20,7 +20,7 @@ export const TsTestingScaffoldMixin = subclass =>
 
       const { tagName } = this.templateData;
       this.copyTemplate(
-        `${__dirname}/templates/_my-el.test.ts`,
+        `${__dirname}/templates/my-el.test.ts`,
         this.destinationPath(`test/${tagName}.test.ts`),
       );
     }

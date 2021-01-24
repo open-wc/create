@@ -10,22 +10,22 @@ export const AppLitElementMixin = subclass =>
 
       // write & rename el class template
       this.copyTemplate(
-        `${__dirname}/templates/_my-app.js`,
+        `${__dirname}/templates/my-app.js`,
         this.destinationPath(`src//${tagName}.js`),
       );
 
       this.copyTemplate(
-        `${__dirname}/templates/_MyApp.js`,
+        `${__dirname}/templates/MyApp.js`,
         this.destinationPath(`src/${className}.js`),
       );
 
       this.copyTemplate(
-        `${__dirname}/templates/_open-wc-logo.js`,
+        `${__dirname}/templates/open-wc-logo.js`,
         this.destinationPath(`src/open-wc-logo.js`),
       );
 
       this.copyTemplateJsonInto(
-        `${__dirname}/templates/_package.json`,
+        `${__dirname}/templates/package.json`,
         this.destinationPath('package.json'),
       );
 
@@ -46,7 +46,7 @@ export const AppLitElementMixin = subclass =>
 
       if (this.options.scaffoldFilesFor && this.options.scaffoldFilesFor.includes('demoing')) {
         this.copyTemplate(
-          `${__dirname}/templates/_my-app.stories.js`,
+          `${__dirname}/templates/my-app.stories.js`,
           this.destinationPath(`./stories/${tagName}.stories.js`),
         );
 
@@ -55,7 +55,7 @@ export const AppLitElementMixin = subclass =>
 
       if (this.options.scaffoldFilesFor && this.options.scaffoldFilesFor.includes('testing')) {
         this.copyTemplate(
-          `${__dirname}/templates/_my-app.test.js`,
+          `${__dirname}/templates/my-app.test.js`,
           this.destinationPath(`./test/${tagName}.test.js`),
         );
 

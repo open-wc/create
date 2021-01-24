@@ -32,12 +32,12 @@ export const WcLitElementMixin = subclass =>
 
       // write & rename el class template
       this.copyTemplate(
-        `${__dirname}/templates/_MyEl.js`,
+        `${__dirname}/templates/MyEl.js`,
         this.destinationPath(`src/${className}.js`),
       );
 
       // write & rename el registration template
-      this.copyTemplate(`${__dirname}/templates/_my-el.js`, this.destinationPath(`${tagName}.js`));
+      this.copyTemplate(`${__dirname}/templates/my-el.js`, this.destinationPath(`${tagName}.js`));
 
       await this.copyTemplates(`${__dirname}/templates/static/**/*`);
     }
@@ -49,7 +49,7 @@ export const WcLitElementPackageMixin = subclass =>
       await super.execute();
       // write & rename package.json
       this.copyTemplateJsonInto(
-        `${__dirname}/templates/_package.json`,
+        `${__dirname}/templates/package.json`,
         this.destinationPath('package.json'),
       );
       this.copyTemplate(
