@@ -56,7 +56,7 @@ export class <%= className %> extends LitElement {
         <p>Edit <code>src/<%= className %>.js</code> and save to reload.</p>
         <a
           class="app-link"
-          href="https://open-wc.org/developing/#code-examples"
+          href="https://open-wc.org/guides/developing-components/code-examples"
           target="_blank"
           rel="noopener noreferrer"
         >
