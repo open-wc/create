@@ -1,19 +1,19 @@
 {
   "devDependencies": {
-    "eslint": "^6.1.0",
+    "eslint": "^7.18.0",
     "@open-wc/eslint-config": "^4.2.0",
-    "prettier": "^2.0.4",
-    "eslint-config-prettier": "^6.11.0",
-    "husky": "^1.0.0",
-    "lint-staged": "^10.0.0",
-    "@web/test-runner": "^0.11.5",
-    "@open-wc/testing": "^2.0.0",
-    "@web/dev-server-storybook": "^0.3.2",
-    "@open-wc/building-rollup": "^1.0.0",
+    "prettier": "^2.2.1",
+    "eslint-config-prettier": "^7.2.0",
+    "husky": "^4.3.8",
+    "lint-staged": "^10.5.3",
+    "@web/test-runner": "^0.12.7",
+    "@open-wc/testing": "^2.5.32",
+    "@web/dev-server-storybook": "^0.3.3",
+    "@open-wc/building-rollup": "^1.9.4",
     "deepmerge": "^4.2.2",
-    "rimraf": "^2.6.3",
-    "rollup": "^2.3.4",
-    "@web/dev-server": "^0.1.1"
+    "rimraf": "^3.0.2",
+    "rollup": "^2.38.0",
+    "@web/dev-server": "^0.1.5"
   },
   "scripts": {
     "lint": "eslint --ext .js,.html . --ignore-path .gitignore && prettier \"**/*.js\" --check --ignore-path .gitignore",
@@ -32,8 +32,8 @@
   "author": "scaffold-app",
   "license": "MIT",
   "dependencies": {
-    "lit-html": "^1.0.0",
-    "lit-element": "^2.0.1"
+    "lit-html": "^1.3.0",
+    "lit-element": "^2.4.0"
   },
   "eslintConfig": {
     "extends": [
