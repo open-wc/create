@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.37.9](https://github.com/open-wc/create/compare/v0.37.8...v0.37.9) (2021-01-28)
+
+
+### Bug Fixes
+
+* remove `git add` from the lint-staged config ([2a4e9af](https://github.com/open-wc/create/commit/2a4e9af3805e888d4d7875f6758480d745472c37))
+* **deps:** update all dependencies ([d4d719e](https://github.com/open-wc/create/commit/d4d719e82f50119f21ed9a62cff3c233b87d9752))
+
 ### [0.37.8](https://github.com/open-wc/create/compare/v0.37.7...v0.37.8) (2021-01-24)
 
 ### [0.37.7](https://github.com/open-wc/create/compare/v0.37.6...v0.37.7) (2021-01-10)
