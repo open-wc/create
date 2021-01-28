@@ -32,12 +32,12 @@ export const TsWcLitElementMixin = subclass =>
 
       // write & rename el class template
       this.copyTemplate(
-        `${__dirname}/templates/_MyEl.ts`,
+        `${__dirname}/templates/MyEl.ts`,
         this.destinationPath(`src/${className}.ts`),
       );
 
       // write & rename el registration template
-      this.copyTemplate(`${__dirname}/templates/_my-el.ts`, this.destinationPath(`${tagName}.ts`));
+      this.copyTemplate(`${__dirname}/templates/my-el.ts`, this.destinationPath(`${tagName}.ts`));
 
       await this.copyTemplates(`${__dirname}/templates/static/**/*`);
     }
@@ -49,7 +49,7 @@ export const TsWcLitElementPackageMixin = subclass =>
       await super.execute();
       // write & rename package.json
       this.copyTemplateJsonInto(
-        `${__dirname}/templates/_package.json`,
+        `${__dirname}/templates/package.json`,
         this.destinationPath('package.json'),
       );
       this.copyTemplate(
@@ -57,7 +57,7 @@ export const TsWcLitElementPackageMixin = subclass =>
         this.destinationPath('custom-elements.json'),
       );
       this.copyTemplate(
-        `${__dirname}/templates/_tsconfig.json`,
+        `${__dirname}/templates/tsconfig.json`,
         this.destinationPath('tsconfig.json'),
       );
     }

@@ -9,12 +9,12 @@ export const CommonRepoMixin = subclass =>
       await super.execute();
 
       this.copyTemplateJsonInto(
-        `${__dirname}/templates/_package.json`,
+        `${__dirname}/templates/package.json`,
         this.destinationPath('package.json'),
       );
 
       // write and rename .gitignore
-      this.copyTemplate(`${__dirname}/templates/_gitignore`, this.destinationPath(`.gitignore`));
+      this.copyTemplate(`${__dirname}/templates/gitignore`, this.destinationPath(`.gitignore`));
 
       // copy all other files
       await this.copyTemplates(`${__dirname}/templates/static/**/*`);

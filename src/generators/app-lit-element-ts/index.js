@@ -10,27 +10,27 @@ export const TsAppLitElementMixin = subclass =>
 
       // write & rename el class template
       this.copyTemplate(
-        `${__dirname}/templates/_my-app.ts`,
+        `${__dirname}/templates/my-app.ts`,
         this.destinationPath(`src//${tagName}.ts`),
       );
 
       this.copyTemplate(
-        `${__dirname}/templates/_MyApp.ts`,
+        `${__dirname}/templates/MyApp.ts`,
         this.destinationPath(`src/${className}.ts`),
       );
 
       this.copyTemplate(
-        `${__dirname}/templates/_open-wc-logo.ts`,
+        `${__dirname}/templates/open-wc-logo.ts`,
         this.destinationPath(`src/open-wc-logo.ts`),
       );
 
       this.copyTemplateJsonInto(
-        `${__dirname}/templates/_package.json`,
+        `${__dirname}/templates/package.json`,
         this.destinationPath('package.json'),
       );
 
       this.copyTemplate(
-        `${__dirname}/templates/_tsconfig.json`,
+        `${__dirname}/templates/tsconfig.json`,
         this.destinationPath('tsconfig.json'),
       );
 
@@ -51,7 +51,7 @@ export const TsAppLitElementMixin = subclass =>
 
       if (this.options.scaffoldFilesFor && this.options.scaffoldFilesFor.includes('demoing')) {
         this.copyTemplate(
-          `${__dirname}/templates/_my-app.stories.ts`,
+          `${__dirname}/templates/my-app.stories.ts`,
           this.destinationPath(`./stories/${tagName}.stories.ts`),
         );
 
@@ -60,7 +60,7 @@ export const TsAppLitElementMixin = subclass =>
 
       if (this.options.scaffoldFilesFor && this.options.scaffoldFilesFor.includes('testing')) {
         this.copyTemplate(
-          `${__dirname}/templates/_my-app.test.ts`,
+          `${__dirname}/templates/my-app.test.ts`,
           this.destinationPath(`./test/${tagName}.test.ts`),
         );
 

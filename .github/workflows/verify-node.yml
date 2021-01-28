@@ -1,6 +1,10 @@
 name: Verify Node
 
-on: pull_request
+on:
+  pull_request:
+  push:
+    branches:
+    - 'renovate/*'
 
 jobs:
   verify-linux:
@@ -13,7 +17,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Setup Node ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
 

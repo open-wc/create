@@ -1,0 +1,28 @@
+{
+  "extends": [
+    "config:base",
+    ":semanticPrefixFix",
+    ":separateMultipleMajorReleases",
+    ":separatePatchReleases",
+    ":maintainLockFilesWeekly",
+    ":widenPeerDependencies"
+  ],
+
+  "packageRules": [
+    {
+      "updateTypes": ["patch"],
+
+      "automerge": true,
+      "automergeType": "branch"
+    },
+    {
+      "updateTypes": ["minor"],
+      "matchCurrentVersion": "!/^[~^]?0/",
+
+      "automerge": true,
+      "automergeType": "branch"
+    }
+  ],
+
+  "rangeStrategy": "bump"
+}
