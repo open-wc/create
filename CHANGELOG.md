@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.37.22](https://github.com/open-wc/create/compare/v0.37.21...v0.37.22) (2021-02-11)
+
+
+### Bug Fixes
+
+* **deps:** update dependency ejs to ^3.1.6 ([4691125](https://github.com/open-wc/create/commit/46911258b015b41b199d757b78c176dbf8e76c77))
+
 ### [0.37.21](https://github.com/open-wc/create/compare/v0.37.20...v0.37.21) (2021-02-11)
 
 ### [0.37.20](https://github.com/open-wc/create/compare/v0.37.19...v0.37.20) (2021-02-11)
