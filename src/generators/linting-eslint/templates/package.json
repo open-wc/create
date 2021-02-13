@@ -1,6 +1,6 @@
 {
   "devDependencies": {
-    "eslint": "^7.19.0",
+    "eslint": "^7.20.0",
     "@open-wc/eslint-config": "^4.2.0"
   },
   "eslintConfig": {
