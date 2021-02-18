@@ -50,9 +50,9 @@
     "semver": "^7.3.4"
   },
   "devDependencies": {
-    "@babel/cli": "^7.12.16",
-    "@babel/core": "^7.12.16",
-    "@babel/preset-env": "^7.12.16",
+    "@babel/cli": "^7.12.17",
+    "@babel/core": "^7.12.17",
+    "@babel/preset-env": "^7.12.17",
     "@babel/register": "^7.12.13",
     "@open-wc/building-rollup": "^1.9.4",
     "@open-wc/eslint-config": "^4.2.0",
