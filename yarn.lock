@@ -3260,6 +3260,14 @@ eslint-plugin-wc@^1.2.0:
     js-levenshtein-esm "^1.2.0"
     validate-element-name "^2.1.1"
 
+eslint-plugin-wc@^1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-wc/-/eslint-plugin-wc-1.3.0.tgz#bef46a334c4d7ceee6b604320c452c1b87cf6270"
+  integrity sha512-jEk9DB7qe/jKNS29OxXpeKnTy4kOu8IEF43GunE2DaRKJtqIj9lMB429V3jCZOTGAxyWXW85ZWBpg1LPiKgSnw==
+  dependencies:
+    js-levenshtein-esm "^1.2.0"
+    validate-element-name "^2.1.1"
+
 eslint-rule-extender@0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/eslint-rule-extender/-/eslint-rule-extender-0.0.1.tgz#ae9faf15d1e651a714d579af0961fd80456f3b16"
