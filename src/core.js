@@ -95,7 +95,7 @@ export function resetVirtualFiles() {
  */
 export function processTemplate(_fileContent, data = {}) {
   let fileContent = _fileContent;
-  fileContent = render(fileContent, data, { debug: false });
+  fileContent = render(fileContent, data, { debug: false, filename: 'template' });
   return fileContent;
 }
 
