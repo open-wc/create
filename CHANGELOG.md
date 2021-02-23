@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.37.37](https://github.com/open-wc/create/compare/v0.37.36...v0.37.37) (2021-02-23)
+
+
+### Features
+
+* **ejs include:** add config filename to allow caching and include functionnality ([e9d155d](https://github.com/open-wc/create/commit/e9d155df7e2f31246ae670a59a3cf16adc6f50a2))
+
 ### [0.37.36](https://github.com/open-wc/create/compare/v0.37.35...v0.37.36) (2021-02-23)
 
 ### [0.37.35](https://github.com/open-wc/create/compare/v0.37.34...v0.37.35) (2021-02-23)
