@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.37.58](https://github.com/open-wc/create/compare/v0.37.57...v0.37.58) (2021-03-13)
+
+
+### Bug Fixes
+
+* **ts:** add incremental compilation to tsconfig.json ([c4e2010](https://github.com/open-wc/create/commit/c4e2010d79db299be8b0d413257cba7a31c7ad06))
+
 ### [0.37.57](https://github.com/open-wc/create/compare/v0.37.56...v0.37.57) (2021-03-13)
 
 ### [0.37.56](https://github.com/open-wc/create/compare/v0.37.55...v0.37.56) (2021-03-13)
