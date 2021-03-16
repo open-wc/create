@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.37.62](https://github.com/open-wc/create/compare/v0.37.61...v0.37.62) (2021-03-16)
+
 ### [0.37.61](https://github.com/open-wc/create/compare/v0.37.60...v0.37.61) (2021-03-16)
 
 ### [0.37.60](https://github.com/open-wc/create/compare/v0.37.59...v0.37.60) (2021-03-16)
