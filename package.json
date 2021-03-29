@@ -50,10 +50,10 @@
     "semver": "^7.3.5"
   },
   "devDependencies": {
-    "@babel/cli": "^7.13.10",
-    "@babel/core": "^7.13.13",
+    "@babel/cli": "^7.13.14",
+    "@babel/core": "^7.13.14",
     "@babel/preset-env": "^7.13.12",
-    "@babel/register": "^7.13.8",
+    "@babel/register": "^7.13.14",
     "@open-wc/building-rollup": "^1.9.4",
     "@open-wc/eslint-config": "^4.2.0",
     "babel-plugin-transform-dynamic-import": "^2.1.0",
