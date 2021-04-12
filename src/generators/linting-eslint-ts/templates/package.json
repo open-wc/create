@@ -2,8 +2,8 @@
   "devDependencies": {
     "eslint": "^7.24.0",
     "@open-wc/eslint-config": "^4.2.0",
-    "@typescript-eslint/parser": "^4.21.0",
-    "@typescript-eslint/eslint-plugin": "^4.21.0"
+    "@typescript-eslint/parser": "^4.22.0",
+    "@typescript-eslint/eslint-plugin": "^4.22.0"
   },
   "eslintConfig": {
     "parser": "@typescript-eslint/parser",
