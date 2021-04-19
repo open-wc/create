@@ -89,13 +89,16 @@ export function resetVirtualFiles() {
  * processTemplate('prefix <%= name %> suffix', { name: 'foo' })
  * // prefix foo suffix
  *
+ * It's also possible to pass custom options to EJS render like changing the delimiter of tags.
+ *
  * @param {string} _fileContent Template as a string
  * @param {object} data Object of all the variables to repalce
+ * @param {ejs.Options} ejsOptions
  * @returns {string} Template with all replacements
  */
-export function processTemplate(_fileContent, data = {}) {
+export function processTemplate(_fileContent, data = {}, ejsOptions = {}) {
   let fileContent = _fileContent;
-  fileContent = render(fileContent, data, { debug: false, filename: 'template' });
+  fileContent = render(fileContent, data, { debug: false, filename: 'template', ...ejsOptions });
   return fileContent;
 }
 
@@ -342,11 +345,12 @@ export function optionsToCommand(options, generatorName = '@open-wc') {
  * @param {string} fromPath
  * @param {string} toPath
  * @param {object} data
+ * @param {ejs.Options} ejsOptions
  */
-export function copyTemplate(fromPath, toPath, data) {
+export function copyTemplate(fromPath, toPath, data, ejsOptions = {}) {
   const fileContent = readFileFromPath(fromPath);
   if (fileContent) {
-    const processed = processTemplate(fileContent, data);
+    const processed = processTemplate(fileContent, data, ejsOptions);
     writeFileToPath(toPath, processed);
   }
 }
@@ -356,8 +360,9 @@ export function copyTemplate(fromPath, toPath, data) {
  * @param {string} fromGlob
  * @param {string} [toDir] Directory to copy into
  * @param {object} data Replace parameters in files
+ * @param {ejs.Options} ejsOptions
  */
-export function copyTemplates(fromGlob, toDir = process.cwd(), data = {}) {
+export function copyTemplates(fromGlob, toDir = process.cwd(), data = {}, ejsOptions = {}) {
   return new Promise(resolve => {
     glob(fromGlob, { dot: true }, (er, files) => {
       const copiedFiles = [];
@@ -365,7 +370,7 @@ export function copyTemplates(fromGlob, toDir = process.cwd(), data = {}) {
         if (!fs.lstatSync(filePath).isDirectory()) {
           const fileContent = readFileFromPath(filePath);
           if (fileContent !== false) {
-            const processed = processTemplate(fileContent, data);
+            const processed = processTemplate(fileContent, data, ejsOptions);
 
             // find path write to (force / also on windows)
             const replace = path.join(fromGlob.replace(/\*/g, '')).replace(/\\(?! )/g, '/');
@@ -386,18 +391,20 @@ export function copyTemplates(fromGlob, toDir = process.cwd(), data = {}) {
  * @param {string} fromPath
  * @param {string} toPath
  * @param {object} data
+ * @param {ejs.Options} ejsOptions
  */
 export function copyTemplateJsonInto(
   fromPath,
   toPath,
   data = {},
   { mode = 'merge' } = { mode: 'merge' },
+  ejsOptions = {},
 ) {
   const content = readFileFromPath(fromPath);
   if (content === false) {
     return;
   }
-  const processed = processTemplate(content, data);
+  const processed = processTemplate(content, data, ejsOptions);
   const mergeMeObj = JSON.parse(processed);
 
   const overwriteMerge = (destinationArray, sourceArray) => sourceArray;

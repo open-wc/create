@@ -40,6 +40,12 @@ describe('processTemplate', () => {
       expect(e).to.be.an.instanceof(ReferenceError);
     }
   });
+
+  it('allows passing custom EJS options like changing the delimiter', async () => {
+    expect(
+      processTemplate('prefix <?= name ?> suffix', { name: 'foo' }, { delimiter: '?' }),
+    ).to.equal('prefix foo suffix');
+  });
 });
 
 describe('writeFileToPath', () => {

@@ -66,16 +66,16 @@ class Generator {
     return path.join(this.options.destinationPath, destination);
   }
 
-  copyTemplate(from, to) {
-    copyTemplate(from, to, this.templateData);
+  copyTemplate(from, to, ejsOptions = {}) {
+    copyTemplate(from, to, this.templateData, ejsOptions);
   }
 
-  copyTemplateJsonInto(from, to, options = { mode: 'merge' }) {
-    copyTemplateJsonInto(from, to, this.templateData, options);
+  copyTemplateJsonInto(from, to, options = { mode: 'merge' }, ejsOptions = {}) {
+    copyTemplateJsonInto(from, to, this.templateData, options, ejsOptions);
   }
 
-  async copyTemplates(from, to = this.destinationPath()) {
-    return copyTemplates(from, to, this.templateData);
+  async copyTemplates(from, to = this.destinationPath(), ejsOptions = {}) {
+    return copyTemplates(from, to, this.templateData, ejsOptions);
   }
 
   async end() {
