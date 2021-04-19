@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.37.95](https://github.com/open-wc/create/compare/v0.37.94...v0.37.95) (2021-04-19)
+
+
+### Features
+
+* allow passing custom EJS options ([dcf386a](https://github.com/open-wc/create/commit/dcf386a1fe7415cd0de870f0957ece694158f7ce))
+
 ### [0.37.94](https://github.com/open-wc/create/compare/v0.37.93...v0.37.94) (2021-04-18)
 
 ### [0.37.93](https://github.com/open-wc/create/compare/v0.37.92...v0.37.93) (2021-04-18)
