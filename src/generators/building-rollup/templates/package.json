@@ -4,7 +4,7 @@
     "start:build": "npm run build && web-dev-server --root-dir dist --app-index index.html --open --compatibility none"
   },
   "devDependencies": {
-    "@open-wc/building-rollup": "^1.9.4",
+    "@open-wc/building-rollup": "^1.10.0",
     "deepmerge": "^4.2.2",
     "rimraf": "^3.0.2",
     "rollup": "^2.45.2"
