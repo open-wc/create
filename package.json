@@ -40,7 +40,7 @@
     "starter-app"
   ],
   "dependencies": {
-    "chalk": "^4.1.0",
+    "chalk": "^4.1.1",
     "command-line-args": "^5.1.1",
     "dedent": "^0.7.0",
     "deepmerge": "^4.2.2",
