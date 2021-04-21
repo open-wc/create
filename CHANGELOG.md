@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.37.100](https://github.com/open-wc/create/compare/v0.37.99...v0.37.100) (2021-04-21)
+
+
+### Bug Fixes
+
+* **deps:** update dependency chalk to ^4.1.1 ([fcfa945](https://github.com/open-wc/create/commit/fcfa9454b69c245e5e338fa5fa2525c476db25cf))
+
 ### [0.37.99](https://github.com/open-wc/create/compare/v0.37.98...v0.37.99) (2021-04-21)
 
 ### [0.37.98](https://github.com/open-wc/create/compare/v0.37.97...v0.37.98) (2021-04-20)
