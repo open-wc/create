@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.37.105](https://github.com/open-wc/create/compare/v0.37.104...v0.37.105) (2021-04-29)
+
+
+### Bug Fixes
+
+* **deps:** update dependency lit-html to ^1.4.0 ([0c9a279](https://github.com/open-wc/create/commit/0c9a279a0a0c53048a260dddbcebeccd40b35904))
+
 ### [0.37.104](https://github.com/open-wc/create/compare/v0.37.103...v0.37.104) (2021-04-24)
 
 ### [0.37.103](https://github.com/open-wc/create/compare/v0.37.102...v0.37.103) (2021-04-24)
