@@ -7,7 +7,7 @@
     "prepublish": "tsc"
   },
   "dependencies": {
-    "lit-html": "^1.4.0",
+    "lit-html": "^1.4.1",
     "lit-element": "^2.5.0"
   },
   "devDependencies": {
