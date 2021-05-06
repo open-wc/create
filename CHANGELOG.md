@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.37.115](https://github.com/open-wc/create/compare/v0.37.114...v0.37.115) (2021-05-06)
+
+
+### Bug Fixes
+
+* **deps:** update dependency lit-element to ^2.5.1 ([9900ab9](https://github.com/open-wc/create/commit/9900ab93e8574b7f6b03c17931312f3e99c636fd))
+
 ### [0.37.114](https://github.com/open-wc/create/compare/v0.37.113...v0.37.114) (2021-05-06)
 
 
