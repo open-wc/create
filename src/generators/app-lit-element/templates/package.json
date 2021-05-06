@@ -6,7 +6,7 @@
   },
   "dependencies": {
     "lit-html": "^1.4.1",
-    "lit-element": "^2.5.0"
+    "lit-element": "^2.5.1"
   },
   "devDependencies": {
     "@web/dev-server": "^0.1.17"
