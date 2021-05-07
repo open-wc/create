@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.37.116](https://github.com/open-wc/create/compare/v0.37.115...v0.37.116) (2021-05-07)
+
+
+### Bug Fixes
+
+* **deps:** update dependency glob to ^7.1.7 ([5604c6f](https://github.com/open-wc/create/commit/5604c6f4aaa0a65979ee8faf336813b6ef5fcfaf))
+
 ### [0.37.115](https://github.com/open-wc/create/compare/v0.37.114...v0.37.115) (2021-05-06)
 
 
