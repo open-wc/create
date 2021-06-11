@@ -7,6 +7,6 @@
     "@open-wc/building-rollup": "^1.10.0",
     "deepmerge": "^4.2.2",
     "rimraf": "^3.0.2",
-    "rollup": "^2.51.1"
+    "rollup": "^2.51.2"
   }
 }
