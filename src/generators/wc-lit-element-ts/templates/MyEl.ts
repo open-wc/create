@@ -1,4 +1,5 @@
-import { html, css, LitElement, property } from 'lit-element';
+import { html, css, LitElement } from 'lit';
+import { property } from 'lit/decorators.js';
 
 export class <%= className %> extends LitElement {
   static styles = css`

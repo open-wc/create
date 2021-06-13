@@ -27,6 +27,7 @@ const pkgJsonOrder = [
   'main',
   'module',
   'browser',
+  'exports',
   'man',
   'preferGlobal',
   'bin',
@@ -51,6 +52,8 @@ const pkgJsonOrder = [
   'cpu',
   'publishConfig',
 ];
+
+const sortedValues = ['dependencies', 'devDependencies'];
 
 /**
  *
@@ -328,13 +331,15 @@ export async function writeFilesToDisk() {
 export function optionsToCommand(options, generatorName = '@open-wc') {
   let command = `npm init ${generatorName} `;
   Object.keys(options).forEach(key => {
-    const value = options[key];
-    if (typeof value === 'string' || typeof value === 'number') {
-      command += `--${key} ${value} `;
-    } else if (typeof value === 'boolean' && value === true) {
-      command += `--${key} `;
-    } else if (Array.isArray(value)) {
-      command += `--${key} ${value.join(' ')} `;
+    if (key !== 'scaffoldFilesFor') {
+      const value = options[key];
+      if (typeof value === 'string' || typeof value === 'number') {
+        command += `--${key} ${value} `;
+      } else if (typeof value === 'boolean' && value === true) {
+        command += `--${key} `;
+      } else if (Array.isArray(value)) {
+        command += `--${key} ${value.join(' ')} `;
+      }
     }
   });
   return command;
@@ -445,11 +450,20 @@ export function copyTemplateJsonInto(
     const temp = {};
     const indexOf = k => {
       const i = pkgJsonOrder.indexOf(k);
-      return i === -1 ? Infinity : 0;
+      return i === -1 ? Number.MAX_SAFE_INTEGER : i;
     };
     const entries = Object.entries(finalObj).sort(([a], [b]) => indexOf(a) - indexOf(b));
     for (const [k, v] of entries) {
-      temp[k] = v;
+      let finalV = v;
+      if (sortedValues.includes(k)) {
+        const newV = {};
+        const vEntries = Object.entries(v).sort();
+        for (const [k2, v2] of vEntries) {
+          newV[k2] = v2;
+        }
+        finalV = newV;
+      }
+      temp[k] = finalV;
     }
     finalObj = temp;
   }
