@@ -1,5 +1,5 @@
-import { html, TemplateResult } from 'lit-html';
-import '../<%= tagName %>.js';
+import { html, TemplateResult } from 'lit';
+import '../src/<%= tagName %>.js';
 
 export default {
   title: '<%= className %>',

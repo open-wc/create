@@ -22,6 +22,7 @@ npm init @open-wc
 - `build` builds your app and outputs it in your `dist` directory
 - `test` runs your test suite with Web Test Runner
 - `lint` runs the linter for your project
+- `format` fixes linting and formatting errors
 
 ## Tooling configs
 

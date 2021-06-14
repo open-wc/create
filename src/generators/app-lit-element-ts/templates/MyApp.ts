@@ -1,5 +1,7 @@
-import { LitElement, html, css, property } from 'lit-element';
-import { openWcLogo } from './open-wc-logo.js';
+import { LitElement, html, css } from 'lit';
+import { property } from 'lit/decorators.js';
+
+const logo = new URL('../../assets/open-wc-logo.svg', import.meta.url).href;
 
 export class <%= className %> extends LitElement {
   @property({ type: String }) title = 'My app';
@@ -23,7 +25,7 @@ export class <%= className %> extends LitElement {
       flex-grow: 1;
     }
 
-    .logo > svg {
+    .logo {
       margin-top: 36px;
       animation: app-logo-spin infinite 20s linear;
     }
@@ -50,7 +52,7 @@ export class <%= className %> extends LitElement {
   render() {
     return html`
       <main>
-        <div class="logo">${openWcLogo}</div>
+        <div class="logo"><img alt="open-wc logo" src=${logo} /></div>
         <h1>${this.title}</h1>
 
         <p>Edit <code>src/<%= className %>.ts</code> and save to reload.</p>

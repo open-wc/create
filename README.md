@@ -95,5 +95,5 @@ npm init @open-wc
   <br/>
 
 - `Building`<br>
-  This generator adds a complete building setup with rollup.
+  This generator adds a complete building setup with Rollup.
   <br/>

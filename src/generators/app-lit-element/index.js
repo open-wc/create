@@ -20,8 +20,8 @@ export const AppLitElementMixin = subclass =>
       );
 
       this.copyTemplate(
-        `${__dirname}/templates/open-wc-logo.js`,
-        this.destinationPath(`src/open-wc-logo.js`),
+        `${__dirname}/templates/open-wc-logo.svg`,
+        this.destinationPath(`assets/open-wc-logo.svg`),
       );
 
       this.copyTemplateJsonInto(
