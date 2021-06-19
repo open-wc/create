@@ -3,8 +3,13 @@ import { join } from 'path';
 import { CommonRepoMixin } from '../common-repo/index.js';
 import { processTemplate, readFileFromPath } from '../../core.js';
 
-const compose = (...fns) => fns.reduce((f, g) => (...args) => f(g(...args)));
-const safeReduce = (f, initial) => xs => (Array.isArray(xs) ? xs.reduce(f, initial) : xs);
+const compose = (...fns) =>
+  fns.reduce(
+    (f, g) =>
+      (...args) =>
+        f(g(...args)),
+  );
+const safeReduce = (f, initial) => xs => Array.isArray(xs) ? xs.reduce(f, initial) : xs;
 
 const getTemplatePart = compose(processTemplate, readFileFromPath);
 
