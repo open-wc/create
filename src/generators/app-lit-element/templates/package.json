@@ -9,6 +9,6 @@
     "lit-element": "^2.5.1"
   },
   "devDependencies": {
-    "@web/dev-server": "^0.1.17"
+    "@web/dev-server": "^0.1.18"
   }
 }
