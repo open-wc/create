@@ -68,7 +68,7 @@
     "lit-element": "^2.5.1",
     "mocha": "^8.4.0",
     "onchange": "^7.1.0",
-    "prettier": "^2.2.1",
+    "prettier": "^2.3.2",
     "standard-version": "^9.3.0"
   },
   "prettier": {
