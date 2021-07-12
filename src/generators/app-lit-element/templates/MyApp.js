@@ -11,6 +11,7 @@ export class <%= className %> extends LitElement {
   static get styles() {
     return css`
       :host {
+        --<%= tagName %>-background-color: #ededed;
         min-height: 100vh;
         display: flex;
         flex-direction: column;
