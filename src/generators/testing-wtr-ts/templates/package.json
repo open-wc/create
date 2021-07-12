@@ -4,6 +4,6 @@
     "test:watch": "tsc && concurrently -k -r \"tsc --watch --preserveWatchOutput\" \"wtr --watch\""
   },
   "devDependencies": {
-    "@web/test-runner": "^0.12.20"
+    "@web/test-runner": "^0.13.13"
   }
 }
