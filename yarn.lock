@@ -3739,13 +3739,13 @@ eslint-plugin-wc@^1.2.0:
     js-levenshtein-esm "^1.2.0"
     validate-element-name "^2.1.1"
 
-eslint-plugin-wc@^1.3.0:
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-wc/-/eslint-plugin-wc-1.3.0.tgz#bef46a334c4d7ceee6b604320c452c1b87cf6270"
-  integrity sha512-jEk9DB7qe/jKNS29OxXpeKnTy4kOu8IEF43GunE2DaRKJtqIj9lMB429V3jCZOTGAxyWXW85ZWBpg1LPiKgSnw==
+eslint-plugin-wc@^1.3.1:
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-wc/-/eslint-plugin-wc-1.3.1.tgz#108058ff54c8d888ea577924e7b6e982734c343e"
+  integrity sha512-2y+ezPwKFm470Pq2dvdkHXEjzCSqo6B2Iqh9gJQFGXs1kvvcYXR+gDvJNICI68utlszVUakt0DYG83uzJnfCKg==
   dependencies:
+    is-valid-element-name "^1.0.0"
     js-levenshtein-esm "^1.2.0"
-    validate-element-name "^2.1.1"
 
 eslint-rule-extender@0.0.1:
   version "0.0.1"
@@ -4794,6 +4794,13 @@ is-utf8@^0.2.0:
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/is-utf8/-/is-utf8-0.2.1.tgz#4b0da1442104d1b336340e80797e865cf39f7d72"
   integrity sha1-Sw2hRCEE0bM2NA6AeX6GXPOffXI=
+
+is-valid-element-name@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/is-valid-element-name/-/is-valid-element-name-1.0.0.tgz#26ef3fd76cdf1f122d105406e32d35b0de005981"
+  integrity sha1-Ju8/12zfHxItEFQG4y01sN4AWYE=
+  dependencies:
+    is-potential-custom-element-name "^1.0.0"
 
 is-windows@^1.0.2:
   version "1.0.2"
