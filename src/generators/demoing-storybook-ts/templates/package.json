@@ -4,6 +4,6 @@
     "storybook:build": "tsc && build-storybook"
   },
   "devDependencies": {
-    "@web/dev-server-storybook": "^0.3.5"
+    "@web/dev-server-storybook": "^0.3.6"
   }
 }
