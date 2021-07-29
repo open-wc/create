@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.37.194](https://github.com/open-wc/create/compare/v0.37.193...v0.37.194) (2021-07-29)
+
+
+### Bug Fixes
+
+* **deps:** update dependency command-line-args to ^5.2.0 ([7eb00ae](https://github.com/open-wc/create/commit/7eb00ae0ee622e6c1951860d9d047dfea161f9ba))
+
 ### [0.37.193](https://github.com/open-wc/create/compare/v0.37.192...v0.37.193) (2021-07-29)
 
 ### [0.37.192](https://github.com/open-wc/create/compare/v0.37.191...v0.37.192) (2021-07-28)
