@@ -1,6 +1,6 @@
 {
   "devDependencies": {
-    "eslint": "^7.31.0",
+    "eslint": "^7.32.0",
     "@open-wc/eslint-config": "^4.3.0",
     "@typescript-eslint/parser": "^4.28.5",
     "@typescript-eslint/eslint-plugin": "^4.28.5"
