@@ -53,7 +53,7 @@
     "@babel/cli": "^7.14.8",
     "@babel/core": "^7.15.0",
     "@babel/preset-env": "^7.15.0",
-    "@babel/register": "^7.14.5",
+    "@babel/register": "^7.15.3",
     "@open-wc/building-rollup": "^1.10.0",
     "@open-wc/eslint-config": "^4.3.0",
     "babel-plugin-transform-dynamic-import": "^2.1.0",
