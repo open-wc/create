@@ -18,9 +18,15 @@ chai.use(chaiFs);
 
 /** @param {ESLint.LintResult} result */
 const getFileMessages = ({ messages, filePath }) =>
-  !messages.length ? '' :
-  messages.map(({ ruleId, line, column, message }) =>
-    `${filePath} ${line}:${column}\n${message} (${ruleId})`).join('\n\n').trimEnd()
+  !messages.length
+    ? ''
+    : messages
+        .map(
+          ({ ruleId, line, column, message }) =>
+            `${filePath} ${line}:${column}\n${message} (${ruleId})`,
+        )
+        .join('\n\n')
+        .trimEnd();
 
 const ACTUAL_PATH = join(process.cwd(), './scaffold-app');
 

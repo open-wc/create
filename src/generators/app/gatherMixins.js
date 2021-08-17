@@ -17,7 +17,7 @@ import {
 import { TsBuildingRollupMixin } from '../building-rollup-ts/index.js';
 
 export function gatherMixins(options) {
-  let consider_scaffoldFilesFor = false;
+  let considerScaffoldFilesFor = false;
   const mixins = [];
 
   if (options.type === 'scaffold') {
@@ -25,11 +25,11 @@ export function gatherMixins(options) {
       switch (options.scaffoldType) {
         case 'wc':
           mixins.push(TsWcLitElementPackageMixin);
-          consider_scaffoldFilesFor = true;
+          considerScaffoldFilesFor = true;
           break;
         case 'wc-lit-element':
           mixins.push(TsWcLitElementMixin);
-          consider_scaffoldFilesFor = true;
+          considerScaffoldFilesFor = true;
           break;
         // no default
       }
@@ -37,11 +37,11 @@ export function gatherMixins(options) {
       switch (options.scaffoldType) {
         case 'wc':
           mixins.push(WcLitElementPackageMixin);
-          consider_scaffoldFilesFor = true;
+          considerScaffoldFilesFor = true;
           break;
         case 'wc-lit-element':
           mixins.push(WcLitElementMixin);
-          consider_scaffoldFilesFor = true;
+          considerScaffoldFilesFor = true;
           break;
         // no default
       }
@@ -82,7 +82,11 @@ export function gatherMixins(options) {
     }
   }
 
-  if (consider_scaffoldFilesFor && options._scaffoldFilesFor && options._scaffoldFilesFor.length > 0) {
+  if (
+    considerScaffoldFilesFor &&
+    options._scaffoldFilesFor &&
+    options._scaffoldFilesFor.length > 0
+  ) {
     options._scaffoldFilesFor.forEach(feature => {
       if (options.typescript === 'true') {
         switch (feature) {
