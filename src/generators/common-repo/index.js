@@ -3,6 +3,7 @@ export const CommonRepoMixin = subclass =>
     async execute() {
       this.templateData = {
         ...this.templateData,
+        scriptRunCommand: this.options.installDependencies === 'yarn' ? 'yarn' : 'npm run',
         year: new Date().getFullYear(),
       };
 
