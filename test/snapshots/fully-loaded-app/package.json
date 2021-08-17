@@ -44,8 +44,8 @@
   },
   "eslintConfig": {
     "extends": [
-      "@open-wc/eslint-config",
-      "eslint-config-prettier"
+      "@open-wc",
+      "prettier"
     ]
   },
   "prettier": {

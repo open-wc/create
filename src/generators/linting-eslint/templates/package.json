@@ -5,7 +5,7 @@
   },
   "eslintConfig": {
     "extends": [
-      "@open-wc/eslint-config"
+      "@open-wc"
     ]
   }
 }

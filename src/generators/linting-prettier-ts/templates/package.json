@@ -5,7 +5,7 @@
   },
   "eslintConfig": {
     "extends": [
-      "eslint-config-prettier"
+      "prettier"
     ]
   },
   "prettier": {
