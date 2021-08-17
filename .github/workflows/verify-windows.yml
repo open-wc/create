@@ -41,5 +41,7 @@ jobs:
       - name: Build
         run: yarn build
 
+      - run: npm config set scripts-prepend-node-path true
+
       - name: Test
         run: yarn test
