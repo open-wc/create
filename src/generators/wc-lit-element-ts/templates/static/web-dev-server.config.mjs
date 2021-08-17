@@ -18,11 +18,6 @@ export default /** @type {import('@web/dev-server').DevServerConfig} */ ({
   /** Set appIndex to enable SPA routing */
   // appIndex: 'demo/index.html',
 
-  /** Confgure bare import resolve plugin */
-  // nodeResolve: {
-  //   exportConditions: ['browser', 'development']
-  // },
-
   plugins: [
     /** Use Hot Module Replacement by uncommenting. Requires @open-wc/dev-server-hmr plugin */
     // hmr && hmrPlugin({ exclude: ['**/*/node_modules/**/*'], presets: [presets.litElement] }),
