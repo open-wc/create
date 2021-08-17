@@ -1,3 +1,4 @@
+// @ts-check
 import _rimraf from 'rimraf';
 import chai from 'chai';
 import chaiFs from 'chai-fs';
@@ -124,5 +125,12 @@ describe('create', function create() {
     expect(warningCountTotal, 'warning count').to.equal(0, prettyOutput);
   });
 
-  it('')
+  it('generates a project with a custom-elements manifest', async () => {
+    const { customElements } = JSON.parse(readFileSync(join(ACTUAL_PATH, 'package.json'), 'utf8'));
+    expect(customElements).to.equal('custom-elements.json');
+    const e = await exec('npm run analyze', { cwd: ACTUAL_PATH });
+    expect(e.stderr, stderr).to.not.be.ok;
+    const manifest = JSON.parse(readFileSync(join(ACTUAL_PATH, 'custom-elements.json'), 'utf8'));
+    expect(manifest.modules.length).to.equal(3);
+  });
 });

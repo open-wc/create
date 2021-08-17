@@ -9,10 +9,11 @@
     "format": "eslint --ext .js,.html . --fix --ignore-path .gitignore && prettier \"**/*.js\" --write --ignore-path .gitignore",
     "test": "web-test-runner --coverage",
     "test:watch": "web-test-runner --watch",
-    "storybook": "web-dev-server -c .storybook/server.mjs",
-    "storybook:build": "build-storybook",
-    "build": "rimraf dist && rollup -c rollup.config.js",
+    "storybook": "npm run analyze && web-dev-server -c .storybook/server.mjs",
+    "storybook:build": "npm run analyze && build-storybook",
+    "build": "rimraf dist && rollup -c rollup.config.js && npm run analyze",
     "start:build": "web-dev-server --root-dir dist --app-index index.html --open",
+    "analyze": "cem analyze",
     "start": "web-dev-server"
   },
   "dependencies": {
@@ -20,6 +21,7 @@
   },
   "devDependencies": {
     "@babel/preset-env": "^7.14.1",
+    "@custom-elements-manifest/analyzer": "^0.4.17",
     "@open-wc/building-rollup": "^1.10.0",
     "@open-wc/eslint-config": "^4.3.0",
     "@open-wc/testing": "next",
@@ -62,5 +64,6 @@
       "eslint --fix",
       "prettier --write"
     ]
-  }
+  },
+  "customElements": "custom-elements.json"
 }
