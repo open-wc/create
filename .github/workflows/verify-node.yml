@@ -42,5 +42,7 @@ jobs:
       - name: Lint
         run: yarn lint
 
+      - run: npm config set scripts-prepend-node-path true
+
       - name: Test
         run: yarn test
