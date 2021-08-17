@@ -29,8 +29,6 @@ export const WcLitElementMixin = subclass =>
   class extends subclass {
     async execute() {
       this.templateData.featureReadmes = safeFeatureReadme(this.options.features);
-      this.templateData.scriptRunCommand =
-        this.options.installDependencies === 'yarn' ? 'yarn' : 'npm run';
 
       await super.execute();
       const { tagName, className } = this.templateData;
