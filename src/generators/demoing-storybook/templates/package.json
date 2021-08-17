@@ -1,7 +1,7 @@
 {
   "scripts": {
-    "storybook": "web-dev-server -c .storybook/server.mjs",
-    "storybook:build": "build-storybook"
+    "storybook": "<%= scriptRunCommand %> analyze && web-dev-server -c .storybook/server.mjs",
+    "storybook:build": "<%= scriptRunCommand %> analyze && build-storybook"
   },
   "devDependencies": {
     "@web/dev-server-storybook": "next"
