@@ -3,5 +3,12 @@
   "version": "0.0.0",
   "description": "Webcomponent <%= tagName %> following open-wc recommendations",
   "author": "<%= tagName %>",
-  "license": "MIT"
+  "license": "MIT",
+  "customElements": "custom-elements.json",
+  "scripts": {
+    "analyze": "cem analyze"
+  },
+  "devDependencies": {
+    "@custom-elements-manifest/analyzer": "^0.4.17"
+  }
 }
