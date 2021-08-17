@@ -1,6 +1,7 @@
 /* eslint-disable no-console, import/no-cycle */
 import prompts from 'prompts';
 import path from 'path';
+import { spawn } from 'child_process';
 
 import {
   copyTemplates,
@@ -107,6 +108,23 @@ class Generator {
       const { installDependencies } = this.options;
       if (installDependencies === 'yarn' || installDependencies === 'npm') {
         await installNpm(this.options.destinationPath, installDependencies);
+        await new Promise(resolve => {
+          const install = spawn(installDependencies, ['run', 'analyze'], {
+            cwd: this.options.destinationPath,
+            shell: true,
+          });
+          install.stdout.on('data', data => {
+            console.log(`${data}`.trim());
+          });
+
+          install.stderr.on('data', data => {
+            console.log(`analyze: ${data}`);
+          });
+
+          install.on('close', () => {
+            resolve();
+          });
+        });
       }
     }
 
