@@ -7,7 +7,7 @@
   },
   "eslintConfig": {
     "parser": "@typescript-eslint/parser",
-    "extends": ["@open-wc/eslint-config"],
+    "extends": ["@open-wc"],
     "plugins": ["@typescript-eslint"],
     "rules": {
       "no-unused-vars": "off",

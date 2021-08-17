@@ -1,9 +1,9 @@
 import { html } from 'lit';
-import '../src/<%= tagName %>.js';
+import '../src/scaffold-app.js';
 
 export default {
-  title: '<%= className %>',
-  component: '<%= tagName %>',
+  title: 'ScaffoldApp',
+  component: 'scaffold-app',
   argTypes: {
     backgroundColor: { control: 'color' },
   },
@@ -11,11 +11,11 @@ export default {
 
 function Template({ title, backgroundColor }) {
   return html`
-    <<%= tagName %>
-      style="--<%= tagName %>-background-color: ${backgroundColor || 'white'}"
+    <scaffold-app
+      style="--scaffold-app-background-color: ${backgroundColor || 'white'}"
       .title=${title}
     >
-    </<%= tagName %>>
+    </scaffold-app>
   `;
 }
 

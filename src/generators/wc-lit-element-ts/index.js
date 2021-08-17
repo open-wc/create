@@ -3,8 +3,13 @@ import { join } from 'path';
 import { CommonRepoMixin } from '../common-repo/index.js';
 import { processTemplate, readFileFromPath } from '../../core.js';
 
-const compose = (...fns) => fns.reduce((f, g) => (...args) => f(g(...args)));
-const safeReduce = (f, initial) => xs => (Array.isArray(xs) ? xs.reduce(f, initial) : xs);
+const compose = (...fns) =>
+  fns.reduce(
+    (f, g) =>
+      (...args) =>
+        f(g(...args)),
+  );
+const safeReduce = (f, initial) => xs => Array.isArray(xs) ? xs.reduce(f, initial) : xs;
 
 const getTemplatePart = compose(processTemplate, readFileFromPath);
 
@@ -37,7 +42,10 @@ export const TsWcLitElementMixin = subclass =>
       );
 
       // write & rename el registration template
-      this.copyTemplate(`${__dirname}/templates/my-el.ts`, this.destinationPath(`${tagName}.ts`));
+      this.copyTemplate(
+        `${__dirname}/templates/my-el.ts`,
+        this.destinationPath(`src/${tagName}.ts`),
+      );
 
       await this.copyTemplates(`${__dirname}/templates/static/**/*`);
     }

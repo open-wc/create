@@ -1,12 +1,12 @@
 import { html } from 'lit';
 import { fixture, expect } from '@open-wc/testing';
 
-import '../src/<%= tagName %>.js';
+import '../src/scaffold-app.js';
 
-describe('<%= className %>', () => {
+describe('ScaffoldApp', () => {
   let element;
   beforeEach(async () => {
-    element = await fixture(html`<<%= tagName %>></<%= tagName %>>`);
+    element = await fixture(html`<scaffold-app></scaffold-app>`);
   });
 
   it('renders a h1', () => {

@@ -13,14 +13,13 @@ import { gatherMixins } from './gatherMixins.js';
  *
  * example:
  * npm init @open-wc --type scaffold --scaffoldType app --tagName foo-bar --installDependencies false
- * npm init @open-wc --type upgrade --features linting demoing --tagName foo-bar --scaffoldFilesFor demoing --installDependencies false
+ * npm init @open-wc --type upgrade --features linting demoing --tagName foo-bar --installDependencies false
  */
 const optionDefinitions = [
   { name: 'destinationPath', type: String }, // path
   { name: 'type', type: String }, // scaffold, upgrade
   { name: 'scaffoldType', type: String }, // wc, app
   { name: 'features', type: String, multiple: true }, // linting, testing, demoing, building
-  { name: 'scaffoldFilesFor', type: String, multiple: true }, // testing, demoing, building
   { name: 'typescript', type: String },
   { name: 'tagName', type: String },
   { name: 'installDependencies', type: String }, // yarn, npm, false
@@ -41,7 +40,6 @@ export const AppMixin = subclass =>
 
     async execute() {
       console.log(header);
-      const scaffoldOptions = [];
       const questions = [
         {
           type: 'select',
@@ -78,16 +76,6 @@ export const AppMixin = subclass =>
                 value: 'building',
               },
             ].filter(_ => !!_),
-          onState: state => {
-            state.value.forEach(meta => {
-              if (meta.selected === true && meta.value !== 'linting') {
-                scaffoldOptions.push({
-                  title: meta.title,
-                  value: meta.value,
-                });
-              }
-            });
-          },
         },
         {
           type: 'select',
@@ -97,12 +85,6 @@ export const AppMixin = subclass =>
             { title: 'No', value: 'false' },
             { title: 'Yes', value: 'true' },
           ],
-        },
-        {
-          type: () => (scaffoldOptions.length > 0 ? 'multiselect' : null),
-          name: 'scaffoldFilesFor',
-          message: 'Would you like to scaffold examples files for?',
-          choices: scaffoldOptions,
         },
         {
           type: 'text',
@@ -120,7 +102,6 @@ export const AppMixin = subclass =>
        *   type: 'scaffold',
        *   scaffoldType: 'wc',
        *   features: [ 'testing', 'building' ],
-       *   scaffoldFilesFor: [ 'testing' ],
        *   tagName: 'foo-bar',
        *   installDependencies: 'false'
        * }
@@ -130,6 +111,11 @@ export const AppMixin = subclass =>
           process.exit();
         },
       });
+
+      if (this.options.type === 'scaffold') {
+        // when using the new project scaffold, infer _scaffoldFilesFor from selected features
+        this.options._scaffoldFilesFor = [...this.options.features];
+      }
 
       const mixins = gatherMixins(this.options);
       // app is separate to prevent circular imports

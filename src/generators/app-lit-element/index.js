@@ -20,8 +20,8 @@ export const AppLitElementMixin = subclass =>
       );
 
       this.copyTemplate(
-        `${__dirname}/templates/open-wc-logo.js`,
-        this.destinationPath(`src/open-wc-logo.js`),
+        `${__dirname}/templates/open-wc-logo.svg`,
+        this.destinationPath(`assets/open-wc-logo.svg`),
       );
 
       this.copyTemplateJsonInto(
@@ -44,7 +44,7 @@ export const AppLitElementMixin = subclass =>
         await this.copyTemplates(`${__dirname}/templates/static-demoing/**/*`);
       }
 
-      if (this.options.scaffoldFilesFor && this.options.scaffoldFilesFor.includes('demoing')) {
+      if (this.options._scaffoldFilesFor && this.options._scaffoldFilesFor.includes('demoing')) {
         this.copyTemplate(
           `${__dirname}/templates/my-app.stories.js`,
           this.destinationPath(`./stories/${tagName}.stories.js`),
@@ -53,7 +53,7 @@ export const AppLitElementMixin = subclass =>
         await this.copyTemplates(`${__dirname}/templates/static-scaffold-demoing/**/*`);
       }
 
-      if (this.options.scaffoldFilesFor && this.options.scaffoldFilesFor.includes('testing')) {
+      if (this.options._scaffoldFilesFor && this.options._scaffoldFilesFor.includes('testing')) {
         this.copyTemplate(
           `${__dirname}/templates/my-app.test.js`,
           this.destinationPath(`./test/${tagName}.test.js`),

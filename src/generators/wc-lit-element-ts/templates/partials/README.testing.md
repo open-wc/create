@@ -1,10 +1,12 @@
 ## Testing with Web Test Runner
-To run the suite of Web Test Runner tests, run
+
+To execute a single test run:
+
 ```bash
 npm run test
 ```
 
-To run the tests in watch mode (for <abbr title="test driven development">TDD</abbr>, for example), run
+To run the tests in interactive watch mode run:
 
 ```bash
 npm run test:watch

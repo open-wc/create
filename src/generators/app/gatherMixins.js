@@ -82,8 +82,12 @@ export function gatherMixins(options) {
     }
   }
 
-  if (considerScaffoldFilesFor && options.scaffoldFilesFor && options.scaffoldFilesFor.length > 0) {
-    options.scaffoldFilesFor.forEach(feature => {
+  if (
+    considerScaffoldFilesFor &&
+    options._scaffoldFilesFor &&
+    options._scaffoldFilesFor.length > 0
+  ) {
+    options._scaffoldFilesFor.forEach(feature => {
       if (options.typescript === 'true') {
         switch (feature) {
           case 'testing':

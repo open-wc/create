@@ -1,7 +1,7 @@
-import { html, fixture, expect } from '@open-wc/testing';
-
+import { html } from 'lit';
+import { fixture, expect } from '@open-wc/testing';
 import { <%= className %> } from '../src/<%= className %>.js';
-import '../<%= tagName %>.js';
+import '../src/<%= tagName %>.js';
 
 describe('<%= className %>', () => {
   it('has a default title "Hey there" and counter 5', async () => {
