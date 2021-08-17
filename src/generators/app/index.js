@@ -102,7 +102,6 @@ export const AppMixin = subclass =>
        *   type: 'scaffold',
        *   scaffoldType: 'wc',
        *   features: [ 'testing', 'building' ],
-       *   scaffoldFilesFor: [ 'testing' ],
        *   tagName: 'foo-bar',
        *   installDependencies: 'false'
        * }
@@ -114,8 +113,8 @@ export const AppMixin = subclass =>
       });
 
       if (this.options.type === 'scaffold') {
-        // when using the new project scaffold, infer scaffoldFilesFor from selected features
-        this.options.scaffoldFilesFor = [...this.options.features];
+        // when using the new project scaffold, infer _scaffoldFilesFor from selected features
+        this.options._scaffoldFilesFor = [...this.options.features];
       }
 
       const mixins = gatherMixins(this.options);

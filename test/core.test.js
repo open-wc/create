@@ -293,12 +293,11 @@ describe('optionsToCommand', () => {
       type: 'scaffold',
       scaffoldType: 'wc',
       features: ['testing', 'demoing'],
-      scaffoldFilesFor: ['testing', 'demoing'],
       tagName: 'foo-bar',
       installDependencies: 'false',
     };
     expect(optionsToCommand(options)).to.equal(
-      'npm init @open-wc --type scaffold --scaffoldType wc --features testing demoing --scaffoldFilesFor testing demoing --tagName foo-bar --installDependencies false ',
+      'npm init @open-wc --type scaffold --scaffoldType wc --features testing demoing --tagName foo-bar --installDependencies false ',
     );
   });
 });

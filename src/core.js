@@ -331,7 +331,7 @@ export async function writeFilesToDisk() {
 export function optionsToCommand(options, generatorName = '@open-wc') {
   let command = `npm init ${generatorName} `;
   Object.keys(options).forEach(key => {
-    if (key !== 'scaffoldFilesFor') {
+    if (key !== '_scaffoldFilesFor') {
       const value = options[key];
       if (typeof value === 'string' || typeof value === 'number') {
         command += `--${key} ${value} `;

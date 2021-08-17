@@ -8,6 +8,6 @@
     "lit": "^2.0.0-rc.2"
   },
   "devDependencies": {
-    "@web/dev-server": "^0.1.17"
+    "@web/dev-server": "^0.1.21"
   }
 }

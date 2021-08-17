@@ -2,6 +2,133 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.37.209](https://github.com/open-wc/create/compare/v0.37.208...v0.37.209) (2021-08-16)
+
+### [0.37.208](https://github.com/open-wc/create/compare/v0.37.207...v0.37.208) (2021-08-16)
+
+### [0.37.207](https://github.com/open-wc/create/compare/v0.37.206...v0.37.207) (2021-08-14)
+
+### [0.37.206](https://github.com/open-wc/create/compare/v0.37.205...v0.37.206) (2021-08-12)
+
+### [0.37.205](https://github.com/open-wc/create/compare/v0.37.204...v0.37.205) (2021-08-11)
+
+### [0.37.204](https://github.com/open-wc/create/compare/v0.37.203...v0.37.204) (2021-08-10)
+
+### [0.37.203](https://github.com/open-wc/create/compare/v0.37.202...v0.37.203) (2021-08-09)
+
+### [0.37.202](https://github.com/open-wc/create/compare/v0.37.201...v0.37.202) (2021-08-09)
+
+### [0.37.201](https://github.com/open-wc/create/compare/v0.37.200...v0.37.201) (2021-08-08)
+
+### [0.37.200](https://github.com/open-wc/create/compare/v0.37.199...v0.37.200) (2021-08-05)
+
+### [0.37.199](https://github.com/open-wc/create/compare/v0.37.198...v0.37.199) (2021-08-05)
+
+### [0.37.198](https://github.com/open-wc/create/compare/v0.37.197...v0.37.198) (2021-08-02)
+
+### [0.37.197](https://github.com/open-wc/create/compare/v0.37.196...v0.37.197) (2021-08-01)
+
+### [0.37.196](https://github.com/open-wc/create/compare/v0.37.195...v0.37.196) (2021-07-31)
+
+### [0.37.195](https://github.com/open-wc/create/compare/v0.37.194...v0.37.195) (2021-07-30)
+
+
+### Bug Fixes
+
+* **deps:** update dependency chalk to ^4.1.2 ([015d10d](https://github.com/open-wc/create/commit/015d10d4cc36cb09198b51eab6249fe8e0156655))
+
+### [0.37.194](https://github.com/open-wc/create/compare/v0.37.193...v0.37.194) (2021-07-29)
+
+
+### Bug Fixes
+
+* **deps:** update dependency command-line-args to ^5.2.0 ([7eb00ae](https://github.com/open-wc/create/commit/7eb00ae0ee622e6c1951860d9d047dfea161f9ba))
+
+### [0.37.193](https://github.com/open-wc/create/compare/v0.37.192...v0.37.193) (2021-07-29)
+
+### [0.37.192](https://github.com/open-wc/create/compare/v0.37.191...v0.37.192) (2021-07-28)
+
+### [0.37.191](https://github.com/open-wc/create/compare/v0.37.190...v0.37.191) (2021-07-26)
+
+### [0.37.190](https://github.com/open-wc/create/compare/v0.37.189...v0.37.190) (2021-07-26)
+
+### [0.37.189](https://github.com/open-wc/create/compare/v0.37.188...v0.37.189) (2021-07-26)
+
+### [0.37.188](https://github.com/open-wc/create/compare/v0.37.187...v0.37.188) (2021-07-25)
+
+### [0.37.187](https://github.com/open-wc/create/compare/v0.37.186...v0.37.187) (2021-07-25)
+
+### [0.37.186](https://github.com/open-wc/create/compare/v0.37.185...v0.37.186) (2021-07-25)
+
+### [0.37.185](https://github.com/open-wc/create/compare/v0.37.184...v0.37.185) (2021-07-21)
+
+### [0.37.184](https://github.com/open-wc/create/compare/v0.37.183...v0.37.184) (2021-07-20)
+
+### [0.37.183](https://github.com/open-wc/create/compare/v0.37.182...v0.37.183) (2021-07-20)
+
+### [0.37.182](https://github.com/open-wc/create/compare/v0.37.181...v0.37.182) (2021-07-19)
+
+### [0.37.181](https://github.com/open-wc/create/compare/v0.37.180...v0.37.181) (2021-07-18)
+
+### [0.37.180](https://github.com/open-wc/create/compare/v0.37.179...v0.37.180) (2021-07-15)
+
+### [0.37.179](https://github.com/open-wc/create/compare/v0.37.178...v0.37.179) (2021-07-14)
+
+### [0.37.178](https://github.com/open-wc/create/compare/v0.37.177...v0.37.178) (2021-07-12)
+
+### [0.37.177](https://github.com/open-wc/create/compare/v0.37.176...v0.37.177) (2021-07-12)
+
+
+### Bug Fixes
+
+* **deps:** update dependency command-line-args to ^5.1.3 ([58fb764](https://github.com/open-wc/create/commit/58fb764ae1961b7b6ff91677cf8a4f8da4acd9dc))
+
+### [0.37.176](https://github.com/open-wc/create/compare/v0.37.175...v0.37.176) (2021-07-11)
+
+### [0.37.175](https://github.com/open-wc/create/compare/v0.37.174...v0.37.175) (2021-07-09)
+
+### [0.37.174](https://github.com/open-wc/create/compare/v0.37.173...v0.37.174) (2021-07-07)
+
+### [0.37.173](https://github.com/open-wc/create/compare/v0.37.172...v0.37.173) (2021-07-05)
+
+### [0.37.172](https://github.com/open-wc/create/compare/v0.37.171...v0.37.172) (2021-07-03)
+
+### [0.37.171](https://github.com/open-wc/create/compare/v0.37.170...v0.37.171) (2021-07-02)
+
+### [0.37.170](https://github.com/open-wc/create/compare/v0.37.169...v0.37.170) (2021-07-01)
+
+### [0.37.169](https://github.com/open-wc/create/compare/v0.37.168...v0.37.169) (2021-07-01)
+
+### [0.37.168](https://github.com/open-wc/create/compare/v0.37.167...v0.37.168) (2021-07-01)
+
+### [0.37.167](https://github.com/open-wc/create/compare/v0.37.166...v0.37.167) (2021-06-30)
+
+### [0.37.166](https://github.com/open-wc/create/compare/v0.37.165...v0.37.166) (2021-06-28)
+
+### [0.37.165](https://github.com/open-wc/create/compare/v0.37.164...v0.37.165) (2021-06-25)
+
+### [0.37.164](https://github.com/open-wc/create/compare/v0.37.163...v0.37.164) (2021-06-23)
+
+### [0.37.163](https://github.com/open-wc/create/compare/v0.37.162...v0.37.163) (2021-06-21)
+
+### [0.37.162](https://github.com/open-wc/create/compare/v0.37.161...v0.37.162) (2021-06-21)
+
+### [0.37.161](https://github.com/open-wc/create/compare/v0.37.160...v0.37.161) (2021-06-21)
+
+### [0.37.160](https://github.com/open-wc/create/compare/v0.37.159...v0.37.160) (2021-06-18)
+
+### [0.37.159](https://github.com/open-wc/create/compare/v0.37.158...v0.37.159) (2021-06-17)
+
+### [0.37.158](https://github.com/open-wc/create/compare/v0.37.157...v0.37.158) (2021-06-17)
+
+### [0.37.157](https://github.com/open-wc/create/compare/v0.37.156...v0.37.157) (2021-06-17)
+
+### [0.37.156](https://github.com/open-wc/create/compare/v0.37.155...v0.37.156) (2021-06-16)
+
+### [0.37.155](https://github.com/open-wc/create/compare/v0.37.154...v0.37.155) (2021-06-14)
+
+### [0.37.154](https://github.com/open-wc/create/compare/v0.37.153...v0.37.154) (2021-06-14)
+
 ### [0.37.153](https://github.com/open-wc/create/compare/v0.37.152...v0.37.153) (2021-06-12)
 
 ### [0.37.152](https://github.com/open-wc/create/compare/v0.37.151...v0.37.152) (2021-06-11)

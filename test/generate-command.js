@@ -8,7 +8,6 @@ export function generateCommand({ destinationPath = '.' } = {}) {
       --type scaffold \
       --scaffoldType app \
       --features linting testing demoing building \
-      --scaffoldFilesFor testing demoing building \
       --typescript false \
       --tagName scaffold-app \
       --writeToDisk true \

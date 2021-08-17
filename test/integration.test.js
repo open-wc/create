@@ -5,7 +5,7 @@ import { exec as _exec } from 'child_process';
 import { promisify } from 'util';
 import { lstatSync, readdirSync, readFileSync } from 'fs';
 import { join } from 'path';
-import { CLIEngine } from 'eslint';
+import { ESLint } from 'eslint';
 import { generateCommand } from './generate-command.js';
 
 const exec = promisify(_exec);
@@ -16,7 +16,11 @@ const { expect } = chai;
 
 chai.use(chaiFs);
 
-const getFileMessages = ({ messages, filePath }) => `${filePath}:\n${messages.join('\n')}`;
+/** @param {ESLint.LintResult} result */
+const getFileMessages = ({ messages, filePath }) =>
+  !messages.length ? '' :
+  messages.map(({ ruleId, line, column, message }) =>
+    `${filePath} ${line}:${column}\n${message} (${ruleId})`).join('\n\n').trimEnd()
 
 const ACTUAL_PATH = join(process.cwd(), './scaffold-app');
 
@@ -105,11 +109,12 @@ describe('create', function create() {
   });
 
   it('generates a project which passes linting', async () => {
-    const cli = new CLIEngine({ useEslintrc: true });
-    // @ts-expect-error: a problem with @types/eslint?
-    const { errorCount, warningCount, messages = [] } = cli.executeOnFiles([ACTUAL_PATH]);
-    const prettyOutput = messages.map(getFileMessages).join('\n\n');
-    expect(errorCount).to.equal(0, prettyOutput);
-    expect(warningCount).to.equal(0, prettyOutput);
+    const linter = new ESLint({ useEslintrc: true });
+    const results = await linter.lintFiles([ACTUAL_PATH]);
+    const errorCountTotal = results.reduce((sum, r) => sum + r.errorCount, 0);
+    const warningCountTotal = results.reduce((sum, r) => sum + r.warningCount, 0);
+    const prettyOutput = `\n\n${results.map(getFileMessages).join('\n')}\n\n`;
+    expect(errorCountTotal, 'error count').to.equal(0, prettyOutput);
+    expect(warningCountTotal, 'warning count').to.equal(0, prettyOutput);
   });
 });
