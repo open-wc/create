@@ -13,7 +13,7 @@
     "storybook:build": "npm run analyze && build-storybook",
     "build": "rimraf dist && rollup -c rollup.config.js && npm run analyze",
     "start:build": "web-dev-server --root-dir dist --app-index index.html --open",
-    "analyze": "cem analyze",
+    "analyze": "cem analyze --litelement",
     "start": "web-dev-server"
   },
   "dependencies": {
