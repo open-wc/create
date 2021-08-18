@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.38.0](https://github.com/open-wc/create/compare/v0.37.218...v0.38.0) (2021-08-18)
+
+
+### ⚠ BREAKING CHANGES
+
+* require node >= 14
+
+### Features
+
+* --help command ([c6b35f4](https://github.com/open-wc/create/commit/c6b35f4462059e2c09d5ae651e60a8cf7628e79a))
+* add cem analyzer ([a630f99](https://github.com/open-wc/create/commit/a630f9920ef688889758899845bb4d9ed58f93cf)), closes [#48](https://github.com/open-wc/create/issues/48)
+* add scriptRunCommand to all templates ([56fb92c](https://github.com/open-wc/create/commit/56fb92cbf1117626741766412d2697a324ab08fe))
+* generate manifest after installing ([1c82db3](https://github.com/open-wc/create/commit/1c82db3856cc10ea8e8f5a6ba4048263da6bfcce))
+* require node >= 14 ([24ca118](https://github.com/open-wc/create/commit/24ca118feeff0c55836917b838990423dae0f74f))
+
+
+### Bug Fixes
+
+* use `--litelement` switch with cem/a ([e7f138c](https://github.com/open-wc/create/commit/e7f138ccd4f18fd731b980dce7820b56fee69276))
+
 ### [0.37.218](https://github.com/open-wc/create/compare/v0.37.217...v0.37.218) (2021-08-18)
 
 ### [0.37.217](https://github.com/open-wc/create/compare/v0.37.216...v0.37.217) (2021-08-18)
