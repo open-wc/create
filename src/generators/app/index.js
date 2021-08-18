@@ -25,19 +25,22 @@ const optionDefinitions = [
   },
   {
     name: 'type',
-    description: 'Choose {bold scaffold} to create a new project or {bold upgrade} to add features to an existing project',
+    description:
+      'Choose {bold scaffold} to create a new project or {bold upgrade} to add features to an existing project',
     typeLabel: '{underline scaffold|upgrade}',
     type: String,
   },
   {
     name: 'scaffoldType',
-    description: 'The type of project to scaffold. {bold wc} for a single published component, {bold app} for an application',
+    description:
+      'The type of project to scaffold. {bold wc} for a single published component, {bold app} for an application',
     type: String,
-    typeLabel: '{underline wc|app}'
+    typeLabel: '{underline wc|app}',
   },
   {
     name: 'features',
-    description: 'Which features to include. {bold linting}, {bold testing}, {bold demoing}, or {bold building}',
+    description:
+      'Which features to include. {bold linting}, {bold testing}, {bold demoing}, or {bold building}',
     type: String,
     typeLabel: '{underline linting|testing|demoing|building}',
     multiple: true,
@@ -46,30 +49,31 @@ const optionDefinitions = [
     name: 'typescript',
     description: 'Whether to use TypeScript in your project',
     type: String,
-    typeLabel: '{underline true|false}'
+    typeLabel: '{underline true|false}',
   },
   {
     name: 'tagName',
     description: 'The tag name for the web component or app shell element',
     type: String,
-    typeLabel: '{underline string}'
+    typeLabel: '{underline string}',
   },
   {
     name: 'installDependencies',
-    description: 'Whether to install dependencies. Choose {bold npm} or {bold yarn} to install with those package managers, or {bold false} to skip installation',
+    description:
+      'Whether to install dependencies. Choose {bold npm} or {bold yarn} to install with those package managers, or {bold false} to skip installation',
     type: String,
-    typeLabel: '{underline yarn|npm|false}'
+    typeLabel: '{underline yarn|npm|false}',
   },
   {
     name: 'writeToDisk',
     description: 'Whether or not to actually write the files to disk',
     type: String,
-    typeLabel: '{underline true|false}'
+    typeLabel: '{underline true|false}',
   },
   {
     name: 'help',
     description: 'This help message',
-    type: Boolean
+    type: Boolean,
   },
 ];
 
@@ -79,20 +83,20 @@ if (overrides.help) {
   const sections = [
     {
       content: header,
-      raw: true
+      raw: true,
     },
     {
       header: 'Usage',
-      content: '$ npm init @open-wc [<options>]'
+      content: '$ npm init @open-wc [<options>]',
     },
     {
       header: 'Options',
       optionList: optionDefinitions,
     },
-  ]
+  ];
 
-  const usage = commandLineUsage(sections)
-  console.log(usage)
+  const usage = commandLineUsage(sections);
+  console.log(usage);
   process.exit(0);
 }
 
@@ -158,9 +162,12 @@ export const AppMixin = subclass =>
           ],
         },
         {
-          type: (prev, all) => all.tagName ? null : 'text',
+          type: (prev, all) => (all.tagName ? null : 'text'),
           name: 'tagName',
-          message: (prev, all) => `What is the tag name of your ${all.scaffoldType === 'app' ? 'app shell element' : 'web component'}?`,
+          message: (prev, all) =>
+            `What is the tag name of your ${
+              all.scaffoldType === 'app' ? 'app shell element' : 'web component'
+            }?`,
           validate: tagName =>
             !/^([a-z])(?!.*[<>])(?=.*-).+$/.test(tagName)
               ? 'You need a minimum of two words separated by dashes (e.g. foo-bar)'
