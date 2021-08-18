@@ -9,8 +9,8 @@ import { AppMixin } from './generators/app/index.js';
 
 (async () => {
   try {
-    if (semver.lte(process.version, '10.12.0')) {
-      console.log(chalk.bgRed('\nUh oh! Looks like you dont have Node v10.12.0 installed!\n'));
+    if (!semver.gte(process.version, '14.0.0')) {
+      console.log(chalk.bgRed('\nUh oh! Looks like you dont have Node v14 installed!\n'));
       console.log(`You can do this by going to ${chalk.underline.blue(`https://nodejs.org/`)}
 
 Or if you use nvm:
