@@ -6,7 +6,7 @@
   "license": "MIT",
   "customElements": "custom-elements.json",
   "scripts": {
-    "analyze": "cem analyze"
+    "analyze": "cem analyze --litelement"
   },
   "devDependencies": {
     "@custom-elements-manifest/analyzer": "^0.4.17"
