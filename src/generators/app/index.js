@@ -1,6 +1,7 @@
 /* eslint-disable no-console */
 import prompts from 'prompts';
 import commandLineArgs from 'command-line-args';
+import commandLineUsage from 'command-line-usage';
 import { executeMixinGenerator } from '../../core.js';
 import { AppLitElementMixin } from '../app-lit-element/index.js';
 import { TsAppLitElementMixin } from '../app-lit-element-ts/index.js';
@@ -16,16 +17,85 @@ import { gatherMixins } from './gatherMixins.js';
  * npm init @open-wc --type upgrade --features linting demoing --tagName foo-bar --installDependencies false
  */
 const optionDefinitions = [
-  { name: 'destinationPath', type: String }, // path
-  { name: 'type', type: String }, // scaffold, upgrade
-  { name: 'scaffoldType', type: String }, // wc, app
-  { name: 'features', type: String, multiple: true }, // linting, testing, demoing, building
-  { name: 'typescript', type: String },
-  { name: 'tagName', type: String },
-  { name: 'installDependencies', type: String }, // yarn, npm, false
-  { name: 'writeToDisk', type: String }, // true, false
+  {
+    name: 'destinationPath',
+    description: 'The path the generator will write files to',
+    type: String,
+    typeLabel: '{underline path}',
+  },
+  {
+    name: 'type',
+    description: 'Choose {bold scaffold} to create a new project or {bold upgrade} to add features to an existing project',
+    typeLabel: '{underline scaffold|upgrade}',
+    type: String,
+  },
+  {
+    name: 'scaffoldType',
+    description: 'The type of project to scaffold. {bold wc} for a single published component, {bold app} for an application',
+    type: String,
+    typeLabel: '{underline wc|app}'
+  },
+  {
+    name: 'features',
+    description: 'Which features to include. {bold linting}, {bold testing}, {bold demoing}, or {bold building}',
+    type: String,
+    typeLabel: '{underline linting|testing|demoing|building}',
+    multiple: true,
+  },
+  {
+    name: 'typescript',
+    description: 'Whether to use TypeScript in your project',
+    type: String,
+    typeLabel: '{underline true|false}'
+  },
+  {
+    name: 'tagName',
+    description: 'The tag name for the web component or app shell element',
+    type: String,
+    typeLabel: '{underline string}'
+  },
+  {
+    name: 'installDependencies',
+    description: 'Whether to install dependencies. Choose {bold npm} or {bold yarn} to install with those package managers, or {bold false} to skip installation',
+    type: String,
+    typeLabel: '{underline yarn|npm|false}'
+  },
+  {
+    name: 'writeToDisk',
+    description: 'Whether or not to actually write the files to disk',
+    type: String,
+    typeLabel: '{underline true|false}'
+  },
+  {
+    name: 'help',
+    description: 'This help message',
+    type: Boolean
+  },
 ];
+
 const overrides = commandLineArgs(optionDefinitions);
+
+if (overrides.help) {
+  const sections = [
+    {
+      content: header,
+      raw: true
+    },
+    {
+      header: 'Usage',
+      content: '$ npm init @open-wc [<options>]'
+    },
+    {
+      header: 'Options',
+      optionList: optionDefinitions,
+    },
+  ]
+
+  const usage = commandLineUsage(sections)
+  console.log(usage)
+  process.exit(0);
+}
+
 prompts.override(overrides);
 
 export const AppMixin = subclass =>
@@ -40,6 +110,7 @@ export const AppMixin = subclass =>
 
     async execute() {
       console.log(header);
+      console.log('Note: you can exit any time with Ctrl+C or Esc');
       const questions = [
         {
           type: 'select',
@@ -87,9 +158,9 @@ export const AppMixin = subclass =>
           ],
         },
         {
-          type: 'text',
+          type: (prev, all) => all.tagName ? null : 'text',
           name: 'tagName',
-          message: 'What is the tag name of your application/web component?',
+          message: (prev, all) => `What is the tag name of your ${all.scaffoldType === 'app' ? 'app shell element' : 'web component'}?`,
           validate: tagName =>
             !/^([a-z])(?!.*[<>])(?=.*-).+$/.test(tagName)
               ? 'You need a minimum of two words separated by dashes (e.g. foo-bar)'
