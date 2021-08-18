@@ -10,7 +10,7 @@ tags:
 
 Web component project scaffolding.
 
-[//]: # "AUTO INSERT HEADER PREPUBLISH"
+[//]: # 'AUTO INSERT HEADER PREPUBLISH'
 
 ## Usage
 
@@ -50,7 +50,7 @@ You may pass options to skip the CLI wizard in part or in whole.
 | Option                  | Type                                        | Description                                                                                                               |     |
 | ----------------------- | ------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- | --- |
 | `--destinationPath`     | path                                        | The path the generator will write files to                                                                                |     |
-| `--type`                | `scaffold`\|`upgrade`                       | Choose scaffold to create a new project or upgrade to add features to an  existing project                                |     |
+| `--type`                | `scaffold`\|`upgrade`                       | Choose scaffold to create a new project or upgrade to add features to an existing project                                 |     |
 | `--scaffoldType`        | `wc`\|`app`                                 | The type of project to scaffold. wc for a single published component, app for an application                              |     |
 | `--features`            | `linting`\|`testing`\|`demoing`\|`building` | Which features to include. linting, testing, demoing, or building                                                         |     |
 | `--typescript`          | `true`\|`false`                             | Whether to use TypeScript in your project                                                                                 |     |
@@ -73,13 +73,13 @@ npm init @open-wc
 
 ### Available scaffold generators:
 
--   `Web Component`<br/>
-    This generator scaffolds a starting point for a web component. We recommend using this generator when you want to develop and publish a single web component.
-    <br/>
+- `Web Component`<br/>
+  This generator scaffolds a starting point for a web component. We recommend using this generator when you want to develop and publish a single web component.
+  <br/>
 
--   `Application`<br/>
-    This generator scaffolds a new starter application. We recommend using this generator at the start of your web component project.
-    <br/>
+- `Application`<br/>
+  This generator scaffolds a new starter application. We recommend using this generator at the start of your web component project.
+  <br/>
 
 ## Features
 
@@ -96,21 +96,21 @@ npm init @open-wc
 
 ### Available Upgrade features
 
--   `Linting`<br>
-    This generator adds a complete linting setup with ESLint, Prettier, Husky and commitlint.
-    <br/>
+- `Linting`<br>
+  This generator adds a complete linting setup with ESLint, Prettier, Husky and commitlint.
+  <br/>
 
--   `Testing`<br>
-    This generator adds a complete testing setup with Web Test Runner.
-    <br/>
+- `Testing`<br>
+  This generator adds a complete testing setup with Web Test Runner.
+  <br/>
 
--   `Demoing`<br>
-    This generator adds a complete demoing setup with Storybook.
-    <br/>
+- `Demoing`<br>
+  This generator adds a complete demoing setup with Storybook.
+  <br/>
 
--   `Building`<br>
-    This generator adds a complete building setup with Rollup.
-    <br/>
+- `Building`<br>
+  This generator adds a complete building setup with Rollup.
+  <br/>
 
 For information on how to extend and customize the generator, see the [docs page](https://open-wc.org/docs/development/generator/#extending)
 
