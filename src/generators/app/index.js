@@ -170,7 +170,7 @@ export const AppMixin = subclass =>
             }?`,
           validate: tagName =>
             !/^([a-z])(?!.*[<>])(?=.*-).+$/.test(tagName)
-              ? 'You need a minimum of two words separated by dashes (e.g. foo-bar)'
+              ? 'You need a minimum of two lowercase words separated by dashes (e.g. foo-bar)'
               : true,
         },
       ];
