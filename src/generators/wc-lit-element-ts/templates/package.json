@@ -7,8 +7,8 @@
   },
   "scripts": {
     "start": "tsc && concurrently -k -r \"tsc --watch --preserveWatchOutput\" \"wds\"",
-    "build": "tsc && <%= scriptRunCommand %> analyze",
-    "prepublish": "tsc && <%= scriptRunCommand %> analyze"
+    "build": "tsc && <%= scriptRunCommand %> analyze --exclude dist",
+    "prepublish": "tsc && <%= scriptRunCommand %> analyze --exclude dist"
   },
   "dependencies": {
     "lit": "^2.0.0-rc.3"

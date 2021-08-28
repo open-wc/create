@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "build": "rimraf dist && tsc && rollup -c rollup.config.js && <%= scriptRunCommand %> analyze",
+    "build": "rimraf dist && tsc && rollup -c rollup.config.js && <%= scriptRunCommand %> analyze --exclude dist",
     "start:build": "web-dev-server --root-dir dist --app-index index.html --open"
   },
   "devDependencies": {
