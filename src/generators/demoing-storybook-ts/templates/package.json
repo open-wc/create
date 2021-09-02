@@ -1,7 +1,7 @@
 {
   "scripts": {
-    "storybook": "tsc && <%= scriptRunCommand %> analyze --exclude dist && concurrently -k -r \"tsc --watch --preserveWatchOutput\" \"wds -c .storybook/server.mjs\"",
-    "storybook:build": "tsc && <%= scriptRunCommand %> analyze --exclude dist && build-storybook"
+    "storybook": "tsc && <%= scriptRunCommand %> analyze -- --exclude dist && concurrently -k -r \"tsc --watch --preserveWatchOutput\" \"wds -c .storybook/server.mjs\"",
+    "storybook:build": "tsc && <%= scriptRunCommand %> analyze -- --exclude dist && build-storybook"
   },
   "devDependencies": {
     "@web/dev-server-storybook": "next"
