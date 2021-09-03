@@ -11,7 +11,7 @@
     "prepublish": "tsc && <%= scriptRunCommand %> analyze -- --exclude dist"
   },
   "dependencies": {
-    "lit": "^2.0.0-rc.3"
+    "lit": "^2.0.0-rc.4"
   },
   "devDependencies": {
     "@web/dev-server": "^0.1.22",
