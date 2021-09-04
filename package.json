@@ -53,7 +53,7 @@
   },
   "devDependencies": {
     "@babel/cli": "^7.15.4",
-    "@babel/core": "^7.15.4",
+    "@babel/core": "^7.15.5",
     "@babel/preset-env": "^7.15.4",
     "@babel/register": "^7.15.3",
     "@custom-elements-manifest/analyzer": "^0.4.17",
