@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.38.20](https://github.com/open-wc/create/compare/v0.38.19...v0.38.20) (2021-09-04)
+
+
+### Features
+
+* Adds vscode extension recommendations ([5606924](https://github.com/open-wc/create/commit/5606924ccc4ab81e116f5ca0ce8d6446a560353f))
+
 ### [0.38.19](https://github.com/open-wc/create/compare/v0.38.18...v0.38.19) (2021-09-04)
 
 ### [0.38.18](https://github.com/open-wc/create/compare/v0.38.17...v0.38.18) (2021-09-03)
