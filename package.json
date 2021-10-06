@@ -1,6 +1,6 @@
 {
   "name": "@open-wc/create",
-  "version": "0.38.43",
+  "version": "0.38.44",
   "publishConfig": {
     "access": "public"
   },
