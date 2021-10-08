@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.38.46](https://github.com/open-wc/create/compare/v0.38.45...v0.38.46) (2021-10-08)
+
+
+### Bug Fixes
+
+* **deps:** update dependency lit to ^2.0.2 ([4e836eb](https://github.com/open-wc/create/commit/4e836eb417a4d5cd6a307d88aadddd4d4b335fa0))
+
 ### [0.38.45](https://github.com/open-wc/create/compare/v0.38.44...v0.38.45) (2021-10-08)
 
 
