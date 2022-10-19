@@ -1,5 +1,5 @@
 {
   "devDependencies": {
-    "@open-wc/testing": "next"
+    "@open-wc/testing": "^3.1.6"
   }
 }
