@@ -475,6 +475,7 @@ export function copyTemplateJsonInto(
  * @param {string} command
  * @param {object} options
  */
+// eslint-disable-next-line default-param-last
 function _install(command = 'npm', options) {
   return new Promise(resolve => {
     const install = spawn(command, ['install'], options);
