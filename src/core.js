@@ -356,7 +356,7 @@ export function copyTemplate(fromPath, toPath, data, ejsOptions = {}) {
   const fileContent = readFileFromPath(fromPath);
   if (fileContent) {
     const processed = processTemplate(fileContent, data, ejsOptions);
-    writeFileToPath(toPath, processed);
+    writeFileToPath(toPath.replace(/\.ejs/g, ''), processed);
   }
 }
 
@@ -379,7 +379,7 @@ export function copyTemplates(fromGlob, toDir = process.cwd(), data = {}, ejsOpt
 
             // find path write to (force / also on windows)
             const replace = path.join(fromGlob.replace(/\*/g, '')).replace(/\\(?! )/g, '/');
-            const toPath = filePath.replace(replace, `${toDir}/`);
+            const toPath = filePath.replace(replace, `${toDir}/`).replace(/\.ejs/g, '');
 
             copiedFiles.push({ toPath, processed });
             writeFileToPath(toPath, processed);
@@ -468,7 +468,7 @@ export function copyTemplateJsonInto(
     finalObj = temp;
   }
 
-  writeFileToPath(toPath, JSON.stringify(finalObj, null, 2));
+  writeFileToPath(toPath.replace(/\.ejs/g, ''), JSON.stringify(finalObj, null, 2));
 }
 
 /**
