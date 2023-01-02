@@ -131,6 +131,6 @@ describe('create', function create() {
     const e = await exec('npm run analyze', { cwd: ACTUAL_PATH });
     expect(e.stderr, stderr).to.not.be.ok;
     const manifest = JSON.parse(readFileSync(join(ACTUAL_PATH, 'custom-elements.json'), 'utf8'));
-    expect(manifest.modules.length).to.equal(3);
+    expect(manifest.modules.length).to.equal(2);
   });
 });

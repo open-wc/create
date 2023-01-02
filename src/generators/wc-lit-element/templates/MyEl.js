@@ -1,26 +1,22 @@
 import { html, css, LitElement } from 'lit';
 
 export class <%= className %> extends LitElement {
-  static get styles() {
-    return css`
-      :host {
-        display: block;
-        padding: 25px;
-        color: var(--<%= tagName %>-text-color, #000);
-      }
-    `;
-  }
+  static styles = css`
+    :host {
+      display: block;
+      padding: 25px;
+      color: var(--<%= tagName %>-text-color, #000);
+    }
+  `;
 
-  static get properties() {
-    return {
-      title: { type: String },
-      counter: { type: Number },
-    };
-  }
+  static properties = {
+    header: { type: String },
+    counter: { type: Number },
+  };
 
   constructor() {
     super();
-    this.title = 'Hey there';
+    this.header = 'Hey there';
     this.counter = 5;
   }
 
@@ -30,7 +26,7 @@ export class <%= className %> extends LitElement {
 
   render() {
     return html`
-      <h2>${this.title} Nr. ${this.counter}!</h2>
+      <h2>${this.header} Nr. ${this.counter}!</h2>
       <button @click=${this.__increment}>increment</button>
     `;
   }

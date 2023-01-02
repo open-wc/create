@@ -1,9 +1,12 @@
 {
   "devDependencies": {
-    "eslint": "^7.32.0",
-    "@open-wc/eslint-config": "^8.0.2"
+    "eslint": "^8.30.0",
+    "@open-wc/eslint-config": "^9.0.2"
   },
   "eslintConfig": {
+    "parserOptions": {
+      "ecmaVersion": "latest"
+    },
     "extends": [
       "@open-wc"
     ]
