@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.38.66](https://github.com/open-wc/create/compare/v0.38.65...v0.38.66) (2023-01-03)
+
+
+### Bug Fixes
+
+* appindex, ts eslint versions ([280c9bb](https://github.com/open-wc/create/commit/280c9bb13e35172a5ea01f45e51e762acdc48798))
+
 ### [0.38.65](https://github.com/open-wc/create/compare/v0.38.64...v0.38.65) (2023-01-03)
 
 
