@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.38.67](https://github.com/open-wc/create/compare/v0.38.66...v0.38.67) (2023-01-15)
+
+
+### Features
+
+* ts nodenext, add type module, add exports for vanilla wc ([f061e20](https://github.com/open-wc/create/commit/f061e2058501a2e4dc5c8719ea68e69ee71a65cf))
+
 ### [0.38.66](https://github.com/open-wc/create/compare/v0.38.65...v0.38.66) (2023-01-03)
 
 
