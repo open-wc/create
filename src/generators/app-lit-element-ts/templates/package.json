@@ -1,6 +1,7 @@
 {
   "name": "<%= tagName %>",
   "license": "MIT",
+  "type": "module",
   "scripts": {
     "start": "tsc && concurrently -k -r \"tsc --watch --preserveWatchOutput\" \"wds\""
   },
