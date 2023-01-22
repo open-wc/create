@@ -24,7 +24,7 @@
     "@babel/preset-env": "^7.16.4",
     "@custom-elements-manifest/analyzer": "^0.4.17",
     "@open-wc/building-rollup": "^2.0.2",
-    "@open-wc/eslint-config": "^9.0.2",
+    "@open-wc/eslint-config": "^9.2.1",
     "@open-wc/testing": "^3.1.6",
     "@rollup/plugin-babel": "^5.3.0",
     "@rollup/plugin-node-resolve": "^13.0.6",
@@ -46,9 +46,6 @@
     "rollup-plugin-workbox": "^6.2.0"
   },
   "eslintConfig": {
-    "parserOptions": {
-      "ecmaVersion": "latest"
-    },
     "extends": [
       "@open-wc",
       "prettier"

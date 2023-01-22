@@ -1,5 +1,5 @@
 import { storybookPlugin } from '@web/dev-server-storybook';
-import baseConfig from '../web-dev-server.config.mjs';
+import baseConfig from '../web-dev-server.config.js';
 
 export default /** @type {import('@web/dev-server').DevServerConfig} */ ({
   ...baseConfig,
