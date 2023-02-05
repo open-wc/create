@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "es2018",
     "module": "esnext",
-    "moduleResolution": "NodeNext",
+    "moduleResolution": "node",
     "noEmitOnError": true,
     "lib": ["es2017", "dom"],
     "strict": true,
