@@ -4,7 +4,7 @@ import { property, customElement } from 'lit/decorators.js';
 const logo = new URL('../../assets/open-wc-logo.svg', import.meta.url).href;
 
 @customElement('<%= tagName %>')
-class <%= className %> extends LitElement {
+export class <%= className %> extends LitElement {
   @property({ type: String }) header = 'My app';
 
   static styles = css`
