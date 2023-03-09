@@ -5,17 +5,17 @@ export default {
   title: '<%= className %>',
   component: '<%= tagName %>',
   argTypes: {
-    title: { control: 'text' },
+    header: { control: 'text' },
     counter: { control: 'number' },
     textColor: { control: 'color' },
   },
 };
 
-function Template({ title = 'Hello world', counter = 5, textColor, slot }) {
+function Template({ header = 'Hello world', counter = 5, textColor, slot }) {
   return html`
     <<%= tagName %>
       style="--<%= tagName %>-text-color: ${textColor || 'black'}"
-      .title=${title}
+      .header=${header}
       .counter=${counter}
     >
       ${slot}
@@ -25,9 +25,9 @@ function Template({ title = 'Hello world', counter = 5, textColor, slot }) {
 
 export const Regular = Template.bind({});
 
-export const CustomTitle = Template.bind({});
-CustomTitle.args = {
-  title: 'My title',
+export const CustomHeader = Template.bind({});
+CustomHeader.args = {
+  header: 'My header',
 };
 
 export const CustomCounter = Template.bind({});

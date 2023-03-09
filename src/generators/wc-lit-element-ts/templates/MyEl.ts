@@ -10,7 +10,7 @@ export class <%= className %> extends LitElement {
     }
   `;
 
-  @property({ type: String }) title = 'Hey there';
+  @property({ type: String }) header = 'Hey there';
 
   @property({ type: Number }) counter = 5;
 
@@ -20,7 +20,7 @@ export class <%= className %> extends LitElement {
 
   render() {
     return html`
-      <h2>${this.title} Nr. ${this.counter}!</h2>
+      <h2>${this.header} Nr. ${this.counter}!</h2>
       <button @click=${this.__increment}>increment</button>
     `;
   }

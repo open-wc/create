@@ -15,10 +15,10 @@
     import { html, render } from 'lit';
     import '../dist/src/<%= tagName %>.js';
 
-    const title = 'Hello owc World!';
+    const header = 'Hello owc World!';
     render(
       html`
-        <<%= tagName %> .title=${title}>
+        <<%= tagName %> .header=${header}>
           some light-dom
         </<%= tagName %>>
       `,
