@@ -9,11 +9,11 @@ export default {
   },
 };
 
-function Template({ title, backgroundColor }) {
+function Template({ header, backgroundColor }) {
   return html`
     <scaffold-app
       style="--scaffold-app-background-color: ${backgroundColor || 'white'}"
-      .title=${title}
+      .header=${header}
     >
     </scaffold-app>
   `;
@@ -21,5 +21,5 @@ function Template({ title, backgroundColor }) {
 
 export const App = Template.bind({});
 App.args = {
-  title: 'My app',
+  header: 'My app',
 };

@@ -5,7 +5,7 @@ export default {
   title: '<%= className %>',
   component: '<%= tagName %>',
   argTypes: {
-    title: { control: 'text' },
+    header: { control: 'text' },
     counter: { control: 'number' },
     textColor: { control: 'color' },
   },
@@ -18,21 +18,21 @@ interface Story<T> {
 }
 
 interface ArgTypes {
-  title?: string;
+  header?: string;
   counter?: number;
   textColor?: string;
   slot?: TemplateResult;
 }
 
 const Template: Story<ArgTypes> = ({
-  title = 'Hello world',
+  header = 'Hello world',
   counter = 5,
   textColor,
   slot,
 }: ArgTypes) => html`
   <<%= tagName %>
     style="--<%= tagName %>-text-color: ${textColor || 'black'}"
-    .title=${title}
+    .header=${header}
     .counter=${counter}
   >
     ${slot}
@@ -41,9 +41,9 @@ const Template: Story<ArgTypes> = ({
 
 export const Regular = Template.bind({});
 
-export const CustomTitle = Template.bind({});
-CustomTitle.args = {
-  title: 'My title',
+export const CustomHeader = Template.bind({});
+CustomHeader.args = {
+  header: 'My header',
 };
 
 export const CustomCounter = Template.bind({});
