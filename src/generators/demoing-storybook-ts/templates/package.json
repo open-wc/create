@@ -4,6 +4,6 @@
     "storybook:build": "tsc && <%= scriptRunCommand %> analyze -- --exclude dist && build-storybook"
   },
   "devDependencies": {
-    "@web/dev-server-storybook": "^0.5.4"
+    "@web/dev-server-storybook": "^0.7.1"
   }
 }
