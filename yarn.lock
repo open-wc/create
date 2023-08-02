@@ -1108,6 +1108,11 @@
     "@jridgewell/resolve-uri" "3.1.0"
     "@jridgewell/sourcemap-codec" "1.4.14"
 
+"@lit-labs/ssr-dom-shim@^1.1.0":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@lit-labs/ssr-dom-shim/-/ssr-dom-shim-1.1.1.tgz#64df34e2f12e68e78ac57e571d25ec07fa460ca9"
+  integrity sha512-kXOeFbfCm4fFf2A3WwVEeQj55tMZa8c8/f9AKHMobQMkzNUfUj+antR3fRPaZJawsa1aZiP/Da3ndpZrwEe4rQ==
+
 "@lit/reactive-element@^1.3.0", "@lit/reactive-element@^1.5.0":
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/@lit/reactive-element/-/reactive-element-1.5.0.tgz#344cc33f2d1491d094b8ef824a9fe31d150d2375"
@@ -4641,7 +4646,7 @@ lines-and-columns@^1.1.6:
   resolved "https://registry.yarnpkg.com/lines-and-columns/-/lines-and-columns-1.2.4.tgz#eca284f75d2965079309dc0ad9255abb2ebc1632"
   integrity sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==
 
-lit-element@^2.2.1, lit-element@^2.5.1:
+lit-element@^2.2.1:
   version "2.5.1"
   resolved "https://registry.yarnpkg.com/lit-element/-/lit-element-2.5.1.tgz#3fa74b121a6cd22902409ae3859b7847d01aa6b6"
   integrity sha512-ogu7PiJTA33bEK0xGu1dmaX5vhcRjBXCFexPja0e7P7jqLhTpNKYRPmE+GmiCaRVAbiQKGkUgkh/i6+bh++dPQ==
@@ -4656,6 +4661,15 @@ lit-element@^3.2.0:
     "@lit/reactive-element" "^1.3.0"
     lit-html "^2.2.0"
 
+lit-element@^3.3.3:
+  version "3.3.3"
+  resolved "https://registry.yarnpkg.com/lit-element/-/lit-element-3.3.3.tgz#10bc19702b96ef5416cf7a70177255bfb17b3209"
+  integrity sha512-XbeRxmTHubXENkV4h8RIPyr8lXc+Ff28rkcQzw3G6up2xg5E8Zu1IgOWIwBLEQsu3cOVFqdYwiVi0hv0SlpqUA==
+  dependencies:
+    "@lit-labs/ssr-dom-shim" "^1.1.0"
+    "@lit/reactive-element" "^1.3.0"
+    lit-html "^2.8.0"
+
 lit-html@^1.0.0, lit-html@^1.1.1:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/lit-html/-/lit-html-1.4.1.tgz#0c6f3ee4ad4eb610a49831787f0478ad8e9ae5e0"
@@ -4665,6 +4679,13 @@ lit-html@^2.2.0, lit-html@^2.5.0:
   version "2.5.0"
   resolved "https://registry.yarnpkg.com/lit-html/-/lit-html-2.5.0.tgz#9d4c0bb3652a6b10bc4ccdb627dfa9eff1215474"
   integrity sha512-bLHosg1XL3JRUcKdSVI0sLCs0y1wWrj2sqqAN3cZ7bDDPNgmDHH29RV48x6Wz3ZmkxIupaE+z7uXSZ/pXWAO1g==
+  dependencies:
+    "@types/trusted-types" "^2.0.2"
+
+lit-html@^2.8.0:
+  version "2.8.0"
+  resolved "https://registry.yarnpkg.com/lit-html/-/lit-html-2.8.0.tgz#96456a4bb4ee717b9a7d2f94562a16509d39bffa"
+  integrity sha512-o9t+MQM3P4y7M7yNzqAyjp7z+mQGa4NS4CxiyLqFPyFWyc4O+nodLrkrxSaCTrla6M5YOLaT3RpbbqjszB5g3Q==
   dependencies:
     "@types/trusted-types" "^2.0.2"
 
