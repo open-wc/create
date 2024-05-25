@@ -12,5 +12,7 @@ export const TsLintingMixin = subclass =>
         `${__dirname}/templates/package.json`,
         this.destinationPath('package.json'),
       );
+
+      await this.copyTemplates(`${__dirname}/templates/static/**/*`);
     }
   };
