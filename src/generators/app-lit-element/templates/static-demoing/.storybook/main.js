@@ -1,3 +1,8 @@
-module.exports = {
-  stories: ['../**/stories/*.stories.{js,md,mdx}'],
+const config = {
+  stories: ['../stories/*.stories.{js,md,mdx}'],
+  framework: {
+    name: '@web/storybook-framework-web-components',
+  },
 };
+
+export default config;
