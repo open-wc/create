@@ -1,10 +1,10 @@
 {
   "compilerOptions": {
-    "target": "es2018",
-    "module": "esnext",
-    "moduleResolution": "node",
+    "target": "es2021",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
     "noEmitOnError": true,
-    "lib": ["es2017", "dom"],
+    "lib": ["es2021", "dom", "DOM.Iterable"],
     "strict": true,
     "esModuleInterop": false,
     "allowSyntheticDefaultImports": true,
