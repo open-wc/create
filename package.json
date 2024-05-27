@@ -58,7 +58,7 @@
     "@babel/register": "^7.24.6",
     "@custom-elements-manifest/analyzer": "^0.4.17",
     "@open-wc/building-rollup": "^2.2.3",
-    "@open-wc/eslint-config": "^9.2.1",
+    "@open-wc/eslint-config": "^9.2.2",
     "@open-wc/testing": "^2.5.33",
     "@rollup/plugin-babel": "^5.3.0",
     "@web/rollup-plugin-html": "^1.11.0",
