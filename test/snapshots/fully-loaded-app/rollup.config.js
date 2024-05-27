@@ -37,7 +37,7 @@ export default {
     babel({
       plugins: [
         [
-          require.resolve('babel-plugin-template-html-minifier'),
+          'babel-plugin-template-html-minifier',
           {
             modules: { lit: ['html', { name: 'css', encapsulation: 'style' }] },
             failOnError: false,
