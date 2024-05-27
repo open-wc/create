@@ -4,6 +4,6 @@
     "test:watch": "web-test-runner --watch"
   },
   "devDependencies": {
-    "@web/test-runner": "^0.14.0"
+    "@web/test-runner": "^0.14.1"
   }
 }
