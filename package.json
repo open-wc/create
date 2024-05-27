@@ -64,7 +64,7 @@
     "@web/rollup-plugin-html": "^1.11.1",
     "@web/rollup-plugin-import-meta-assets": "^1.0.8",
     "babel-plugin-transform-dynamic-import": "^2.1.0",
-    "chai": "^4.3.4",
+    "chai": "^4.3.10",
     "chai-fs": "^2.0.0",
     "eslint": "^8.30.0",
     "eslint-config-prettier": "^8.3.0",
