@@ -7,7 +7,7 @@
     "./<%= tagName %>.js": "./dist/src/<%= tagName %>.js"
   },
   "scripts": {
-    "start": "tsc && concurrently -k -r \"tsc --watch --preserveWatchOutput\" \"wds\"",
+    "start": "tsc && concurrently -k -r \"tsc --watch --preserveWatchOutput\" \"web-dev-server\"",
     "build": "tsc && <%= scriptRunCommand %> analyze -- --exclude dist",
     "prepublish": "tsc && <%= scriptRunCommand %> analyze -- --exclude dist"
   },
