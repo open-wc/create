@@ -10,7 +10,7 @@ export default `
  \`p.                     .q'
   \`p.    open-wc.org    .q'
    \`b.     @openWc     .d'
-     \`q..            ..,'      See more details at https://open-wc.org/init/
+     \`q..            ..,'      See more details at https://open-wc.org/docs/development/generator/
         '',,,,,,,,,,''
 
 `;
