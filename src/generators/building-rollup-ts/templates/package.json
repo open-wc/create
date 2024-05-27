@@ -15,6 +15,6 @@
     "rimraf": "^3.0.2",
     "rollup-plugin-esbuild": "^5.0.0",
     "rollup-plugin-workbox": "^6.2.0",
-    "rollup": "^2.60.0"
+    "rollup": "^2.60.2"
   }
 }
