@@ -5,7 +5,6 @@
   },
   "devDependencies": {
     "@babel/preset-env": "^7.24.6",
-    "@open-wc/building-rollup": "^3.0.2",
     "@rollup/plugin-babel": "^6.0.4",
     "@rollup/plugin-node-resolve": "^15.2.3",
     "@web/rollup-plugin-html": "^2.3.0",
