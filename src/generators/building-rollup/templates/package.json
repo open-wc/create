@@ -7,7 +7,7 @@
     "@babel/preset-env": "^7.24.6",
     "@open-wc/building-rollup": "^2.2.3",
     "@rollup/plugin-babel": "^5.3.1",
-    "@rollup/plugin-node-resolve": "^13.0.6",
+    "@rollup/plugin-node-resolve": "^13.3.0",
     "@web/rollup-plugin-html": "^1.11.1",
     "@web/rollup-plugin-import-meta-assets": "^1.0.8",
     "babel-plugin-template-html-minifier": "^4.1.0",
