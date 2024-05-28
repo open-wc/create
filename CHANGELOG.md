@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+### [0.38.94](https://github.com/open-wc/create/compare/v0.38.93...v0.38.94) (2024-05-28)
+
+
+### Bug Fixes
+
+* **deps:** update dependency semver to ^7.3.8 ([a115268](https://github.com/open-wc/create/commit/a115268dd0cd60b14021b799238f0c450dc77a7c))
+
 ### [0.38.93](https://github.com/open-wc/create/compare/v0.38.92...v0.38.93) (2024-05-28)
 
 ### [0.38.92](https://github.com/open-wc/create/compare/v0.38.91...v0.38.92) (2024-05-28)
