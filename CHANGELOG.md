@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+### [0.38.91](https://github.com/open-wc/create/compare/v0.38.90...v0.38.91) (2024-05-28)
+
+
+### Bug Fixes
+
+* **deps:** update dependency ejs to ^3.1.10 ([682908b](https://github.com/open-wc/create/commit/682908b55e034fabfcf19bc443198aa8eee212b9))
+
 ### [0.38.90](https://github.com/open-wc/create/compare/v0.38.89...v0.38.90) (2024-05-28)
 
 
