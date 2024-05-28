@@ -18,7 +18,7 @@ Web component project scaffolding.
 npm init @open-wc
 ```
 
-<div class="custom-block warning"><p class="custom-block-title">WARNING</p> <p><code>npm init</code> requires node 14 &amp; npm 6 or higher</p></div>
+<div class="custom-block warning"><p class="custom-block-title">WARNING</p> <p><code>npm init</code> requires node 18 &amp; npm 6 or higher</p></div>
 
 This will kickstart a menu guiding you through all available actions.
 
