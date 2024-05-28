@@ -49,7 +49,7 @@
     "ejs": "^3.1.10",
     "glob": "^7.2.3",
     "prompts": "^2.4.2",
-    "semver": "^7.3.5"
+    "semver": "^7.3.8"
   },
   "devDependencies": {
     "@babel/cli": "^7.24.6",
