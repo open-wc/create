@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+### [0.38.90](https://github.com/open-wc/create/compare/v0.38.89...v0.38.90) (2024-05-28)
+
+
+### Bug Fixes
+
+* **deps:** update dependency command-line-usage to ^6.1.3 ([eb2ba45](https://github.com/open-wc/create/commit/eb2ba4556488d829e492446e959b521d9e47606f))
+
 ### [0.38.89](https://github.com/open-wc/create/compare/v0.38.88...v0.38.89) (2024-05-28)
 
 
