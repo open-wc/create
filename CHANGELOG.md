@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+### [0.38.106](https://github.com/open-wc/create/compare/v0.38.105...v0.38.106) (2024-05-29)
+
+
+### Bug Fixes
+
+* **deps:** update dependency lit to ^3.0.2 ([3012de5](https://github.com/open-wc/create/commit/3012de59abf9ebf0788eff9f502a5e09667be224))
+
 ### [0.38.105](https://github.com/open-wc/create/compare/v0.38.104...v0.38.105) (2024-05-29)
 
 ### [0.38.104](https://github.com/open-wc/create/compare/v0.38.103...v0.38.104) (2024-05-29)
