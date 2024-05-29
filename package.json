@@ -1,13 +1,13 @@
 {
   "name": "@open-wc/create",
-  "version": "0.38.102",
+  "version": "0.38.103",
   "publishConfig": {
     "access": "public"
   },
   "description": "Easily setup all the tools of Open Web Components.",
   "engines": {
     "node": ">=18.0.0"
-},
+  },
   "license": "MIT",
   "repository": {
     "type": "git",
