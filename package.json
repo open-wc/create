@@ -81,7 +81,7 @@
     "prettier": "^3.2.5",
     "rollup-plugin-esbuild": "^6.1.1",
     "rollup-plugin-workbox": "^8.1.0",
-    "commit-and-tag-version": "^9.6.0"
+    "commit-and-tag-version": "^12.4.1"
   },
   "prettier": {
     "singleQuote": true,
