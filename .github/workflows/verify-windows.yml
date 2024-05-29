@@ -16,12 +16,12 @@ jobs:
           git config --global core.autocrlf false
           git config --global core.eol lf
 
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
 
-      - name: Setup Node 14.x
-        uses: actions/setup-node@v2
+      - name: Setup Node 22.x
+        uses: actions/setup-node@v4
         with:
-          node-version: 14.x
+          node-version: 22.x
           cache: 'yarn'
 
       - name: Install dependencies
@@ -29,8 +29,6 @@ jobs:
 
       - name: Build
         run: yarn build
-
-      - run: npm config set scripts-prepend-node-path true
 
       - name: Test
         run: yarn test

@@ -1,5 +1,6 @@
 {
   "devDependencies": {
-    "@open-wc/testing": "^3.1.8"
+    "@open-wc/testing": "^4.0.0",
+    "@types/mocha": "^10.0.6"
   }
 }

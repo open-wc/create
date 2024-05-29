@@ -18,7 +18,7 @@ Web component project scaffolding.
 npm init @open-wc
 ```
 
-<div class="custom-block warning"><p class="custom-block-title">WARNING</p> <p><code>npm init</code> requires node 14 &amp; npm 6 or higher</p></div>
+<div class="custom-block warning"><p class="custom-block-title">WARNING</p> <p><code>npm init</code> requires node 18 &amp; npm 6 or higher</p></div>
 
 This will kickstart a menu guiding you through all available actions.
 
@@ -30,7 +30,7 @@ This will kickstart a menu guiding you through all available actions.
      .d'    Web Components  `b.    Start or upgrade your web component project with
      .d'                     `b.   ease. All our recommendations at your fingertips.
      ::   .................   ::
-     `p.                     .q'   See more details at https://open-wc.org/init/
+     `p.                     .q'   See more details at https://open-wc.org/docs/development/generator/
       `p.    open-wc.org    .q'
        `b.     @openWc     .d'
          `q..            ..,'      Note: you can exit any time with Ctrl+C or Esc
