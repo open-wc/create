@@ -3635,10 +3635,10 @@ eslint-plugin-wc@^1.2.0:
     is-valid-element-name "^1.0.0"
     js-levenshtein-esm "^1.2.0"
 
-eslint-plugin-wc@^1.5.0:
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-wc/-/eslint-plugin-wc-1.5.0.tgz#7b8b1f126947c2a2cfd3188c593dde1f468affe9"
-  integrity sha512-KFSfiHDol/LeV7U6IX8GdgpGf/s3wG8FTG120Rml/hGNB/DkCuGYQhlf0VgdBdf7gweem8Nlsh5o64HNdj+qPA==
+eslint-plugin-wc@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-wc/-/eslint-plugin-wc-2.1.0.tgz#f05ffee971cdd0d6c5ba252ebc7f8c44aba2e579"
+  integrity sha512-s/BGOtmpgQ2yifR6EC1OM9t0DwYLgg4ZAL07Kw4eXvBb5TYaPafI+65tswvnZvhH8FqcjERLbBZPPvYsvinkfg==
   dependencies:
     is-valid-element-name "^1.0.0"
     js-levenshtein-esm "^1.2.0"
