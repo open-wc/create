@@ -78,7 +78,7 @@
     "lit-element": "^4.0.5",
     "mocha": "^10.4.0",
     "onchange": "^7.1.0",
-    "prettier": "^3.2.5",
+    "prettier": "^3.3.0",
     "rollup-plugin-esbuild": "^6.1.1",
     "rollup-plugin-workbox": "^8.1.0",
     "commit-and-tag-version": "^12.4.1"
