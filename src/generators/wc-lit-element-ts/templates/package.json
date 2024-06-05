@@ -12,7 +12,7 @@
     "prepublish": "tsc && <%= scriptRunCommand %> analyze -- --exclude dist"
   },
   "dependencies": {
-    "lit": "^3.1.3"
+    "lit": "^3.1.4"
   },
   "devDependencies": {
     "@web/dev-server": "^0.4.5",
