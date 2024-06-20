@@ -11,7 +11,7 @@
   "devDependencies": {
     "@web/dev-server": "^0.4.5",
     "concurrently": "^8.2.2",
-    "typescript": "^5.4.5",
+    "typescript": "^5.5.2",
     "tslib": "^2.6.3"
   }
 }
