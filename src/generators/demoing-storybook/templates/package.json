@@ -4,12 +4,12 @@
     "storybook:build": "<%= scriptRunCommand %> analyze -- --exclude dist && storybook build"
   },
   "devDependencies": {
-    "@storybook/addon-a11y": "^7.6.19",
-    "@storybook/addon-essentials": "^7.6.19",
-    "@storybook/addon-links": "^7.6.19",
-    "@storybook/web-components": "^7.6.19",
+    "@storybook/addon-a11y": "^7.6.20",
+    "@storybook/addon-essentials": "^7.6.20",
+    "@storybook/addon-links": "^7.6.20",
+    "@storybook/web-components": "^7.6.20",
     "@web/storybook-builder": "^0.1.16",
     "@web/storybook-framework-web-components": "^0.1.2",
-    "storybook": "^7.6.19"
+    "storybook": "^7.6.20"
   }
 }
