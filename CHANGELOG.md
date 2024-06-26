@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.38.139](https://github.com/open-wc/create/compare/v0.38.138...v0.38.139) (2024-06-26)
+
 ## [0.38.138](https://github.com/open-wc/create/compare/v0.38.137...v0.38.138) (2024-06-26)
 
 ## [0.38.137](https://github.com/open-wc/create/compare/v0.38.136...v0.38.137) (2024-06-26)
