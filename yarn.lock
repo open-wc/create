@@ -1562,6 +1562,13 @@
     magic-string "^0.25.0"
     string.prototype.matchall "^4.0.6"
 
+"@thepassle/axobject-query@^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@thepassle/axobject-query/-/axobject-query-4.0.0.tgz#55913184bbd715544c4a5960eac85e598c03715c"
+  integrity sha512-/LHo+2jOdxs2WtbGocr3/lDSzsnjgCV6DSoBf4Y1Q0D24Hu67NPWuneoJimfHu5auqqSWi1fAvtln2013VxVqg==
+  dependencies:
+    dequal "^2.0.3"
+
 "@types/accepts@*":
   version "1.3.7"
   resolved "https://registry.npmjs.org/@types/accepts/-/accepts-1.3.7.tgz"
@@ -3607,7 +3614,7 @@ eslint-plugin-import@^2.29.1:
     semver "^6.3.1"
     tsconfig-paths "^3.15.0"
 
-eslint-plugin-lit-a11y@^4.1.1, eslint-plugin-lit-a11y@^4.1.2:
+eslint-plugin-lit-a11y@^4.1.1:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/eslint-plugin-lit-a11y/-/eslint-plugin-lit-a11y-4.1.2.tgz#8d813e8c07a6a3a905fb3404138571783accd89a"
   integrity sha512-otrF1Q0uv6RUz/AflVgnf1rVzbfQJfgUmnB+xBl71IR8EwtJGEOrqGs3Ky/4APMda+maF6bsZLctppcz16m7Hw==
@@ -3615,6 +3622,23 @@ eslint-plugin-lit-a11y@^4.1.1, eslint-plugin-lit-a11y@^4.1.2:
     aria-query "^5.1.3"
     axe-core "^4.3.3"
     axobject-query "^2.2.0"
+    dom5 "^3.0.1"
+    emoji-regex "^10.2.1"
+    eslint-plugin-lit "^1.10.1"
+    eslint-rule-extender "0.0.1"
+    language-tags "^1.0.5"
+    parse5 "^7.1.2"
+    parse5-htmlparser2-tree-adapter "^6.0.1"
+    requireindex "~1.2.0"
+
+eslint-plugin-lit-a11y@^4.1.3:
+  version "4.1.3"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-lit-a11y/-/eslint-plugin-lit-a11y-4.1.3.tgz#121787a69f27a6e3dc46d6be1744bf022ac63185"
+  integrity sha512-ndfGZU0RFKp9xqm17f94sQzjgVchDtYL1z/N0qG0otQiDtia1EUVCdd1eMlCeeUe6LTtfjV4iAsNU4r0bVB/Yw==
+  dependencies:
+    "@thepassle/axobject-query" "^4.0.0"
+    aria-query "^5.1.3"
+    axe-core "^4.3.3"
     dom5 "^3.0.1"
     emoji-regex "^10.2.1"
     eslint-plugin-lit "^1.10.1"
