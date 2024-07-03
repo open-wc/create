@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.38.143](https://github.com/open-wc/create/compare/v0.38.142...v0.38.143) (2024-07-03)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([#149](https://github.com/open-wc/create/issues/149)) ([1a98824](https://github.com/open-wc/create/commit/1a98824f0b5a589d310572f55b95b8dd767af053))
+
 ## [0.38.142](https://github.com/open-wc/create/compare/v0.38.141...v0.38.142) (2024-07-02)
 
 ## [0.38.141](https://github.com/open-wc/create/compare/v0.38.140...v0.38.141) (2024-07-02)
