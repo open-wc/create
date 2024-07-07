@@ -369,7 +369,7 @@ export function copyTemplate(fromPath, toPath, data, ejsOptions = {}) {
  */
 export function copyTemplates(fromGlob, toDir = process.cwd(), data = {}, ejsOptions = {}) {
   return new Promise(resolve => {
-    glob(fromGlob, { dot: true }, (er, files) => {
+    glob(fromGlob, { dot: true, windowsPathsNoEscape: true }, (er, files) => {
       const copiedFiles = [];
       files.forEach(filePath => {
         if (!fs.lstatSync(filePath).isDirectory()) {
