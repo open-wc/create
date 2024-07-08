@@ -9,6 +9,6 @@
     "analyze": "cem analyze --litelement"
   },
   "devDependencies": {
-    "@custom-elements-manifest/analyzer": "^0.10.2"
+    "@custom-elements-manifest/analyzer": "^0.10.3"
   }
 }
