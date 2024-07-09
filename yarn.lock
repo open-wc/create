@@ -1030,10 +1030,10 @@
   resolved "https://registry.yarnpkg.com/@blakeembrey/template/-/template-1.1.0.tgz#fbea7a688ffedf0763085b2cda8efe6fdd54d4c4"
   integrity sha512-iZf+UWfL+DogJVpd/xMQyP6X6McYd6ArdYoPMiv/zlOTzeXXfQbYxBNJJBF6tThvsjLMbA8tLjkCdm9RWMFCCw==
 
-"@custom-elements-manifest/analyzer@^0.10.2":
-  version "0.10.2"
-  resolved "https://registry.yarnpkg.com/@custom-elements-manifest/analyzer/-/analyzer-0.10.2.tgz#5f71d02f45c3db691e752ca19e4bee8ea4068ded"
-  integrity sha512-YkfAfaNGSulnXxyIAHU3K8Z7bYGmIU2MlPvEaQPXnWUaIFMo0p3VEVYvByvENnVCQKPPDyjlkCm73u/zRnRvMA==
+"@custom-elements-manifest/analyzer@^0.10.3":
+  version "0.10.3"
+  resolved "https://registry.yarnpkg.com/@custom-elements-manifest/analyzer/-/analyzer-0.10.3.tgz#3b12957514475b24672ed08f48e007c7e5f018ea"
+  integrity sha512-e2Ax59vK9sNedmDlPqZS11L54iAlKSjOJuv5etpTy5SygLBW3GcUtocHZm8wO013L0griTPpgWB0tuV7/JXy5A==
   dependencies:
     "@custom-elements-manifest/find-dependencies" "^0.0.5"
     "@github/catalyst" "^1.6.0"
