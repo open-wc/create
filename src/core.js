@@ -277,7 +277,12 @@ export function filesToTree(allFiles, level = 0) {
  */
 export async function writeFilesToDisk() {
   const treeFiles = [];
-  const root = process.cwd();
+  const root = process.cwd().replace(/\\/g, '/');
+
+  virtualFiles.forEach((vFile, i) => {
+    virtualFiles[i].path = vFile.path.replace(/\\/g, '/');
+  });
+
   virtualFiles.sort((a, b) => {
     const pathA = a.path.toLowerCase();
     const pathB = b.path.toLowerCase();
@@ -369,7 +374,7 @@ export function copyTemplate(fromPath, toPath, data, ejsOptions = {}) {
  */
 export function copyTemplates(fromGlob, toDir = process.cwd(), data = {}, ejsOptions = {}) {
   return new Promise(resolve => {
-    glob(fromGlob, { dot: true }, (er, files) => {
+    glob(fromGlob, { dot: true, windowsPathsNoEscape: true }, (er, files) => {
       const copiedFiles = [];
       files.forEach(filePath => {
         if (!fs.lstatSync(filePath).isDirectory()) {
