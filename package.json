@@ -44,7 +44,7 @@
     "starter-app"
   ],
   "dependencies": {
-    "chalk": "^4.1.2",
+    "chalk": "^5.3.0",
     "command-line-args": "^5.2.1",
     "command-line-usage": "^7.0.2",
     "dedent": "^1.5.3",
