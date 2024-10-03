@@ -6,7 +6,7 @@
   },
   "description": "Easily setup all the tools of Open Web Components.",
   "engines": {
-    "node": ">=18.20.3"
+    "node": ">=20.18.0"
   },
   "license": "MIT",
   "repository": {
