@@ -2000,6 +2000,11 @@ array-back@^6.1.2, array-back@^6.2.2:
   resolved "https://registry.yarnpkg.com/array-back/-/array-back-6.2.2.tgz#f567d99e9af88a6d3d2f9dfcc21db6f9ba9fd157"
   integrity sha512-gUAZ7HPyb4SJczXAMUXMGAvI976JoK3qEx9v1FTmeYuJj0IBiaKttG1ydtGKdkfqWkIkouke7nG8ufGy77+Cvw==
 
+array-back@^6.2.3:
+  version "6.2.3"
+  resolved "https://registry.yarnpkg.com/array-back/-/array-back-6.2.3.tgz#d41e67598805e614f23b319b9e5960dfbcd72ae2"
+  integrity sha512-SGDvmg6QTYiTxCBkYVmThcoa67uLl35pyzRHdpCGBOcqFy6BtwnphoFPk7LhJshD+Yk1Kt35WGWeZPTgwR4Fhw==
+
 array-buffer-byte-length@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/array-buffer-byte-length/-/array-buffer-byte-length-1.0.1.tgz#1e5583ec16763540a27ae52eed99ff899223568f"
@@ -2507,6 +2512,16 @@ command-line-args@^5.2.1:
     find-replace "^3.0.0"
     lodash.camelcase "^4.3.0"
     typical "^4.0.0"
+
+command-line-args@^6.0.2:
+  version "6.0.2"
+  resolved "https://registry.yarnpkg.com/command-line-args/-/command-line-args-6.0.2.tgz#a5b8a87d3f12aa1707c122c5ed38bc64535514a0"
+  integrity sha512-AIjYVxrV9X752LmPDLbVYv8aMCuHPSLZJXEo2qo/xJfv+NYhaZ4sMSF01rM+gHPaMgvPM0l5D/F+Qx+i2WfSmQ==
+  dependencies:
+    array-back "^6.2.3"
+    find-replace "^5.0.2"
+    lodash.camelcase "^4.3.0"
+    typical "^7.3.0"
 
 command-line-usage@^7.0.0:
   version "7.0.1"
@@ -3714,6 +3729,11 @@ find-replace@^3.0.0:
   integrity sha512-6Tb2myMioCAgv5kfvP5/PkZZ/ntTpVK39fHY7WkWBgvbeE+VHd/tZuZ4mrC+bxh4cfOZeYKVPaJIZtZXV7GNCQ==
   dependencies:
     array-back "^3.0.1"
+
+find-replace@^5.0.2:
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/find-replace/-/find-replace-5.0.2.tgz#fe27ff0be05975aef6fc679c1139bbabea564e26"
+  integrity sha512-Y45BAiE3mz2QsrN2fb5QEtO4qb44NcS7en/0y9PEVsg351HsLeVclP8QPMH79Le9sH3rs5RSwJu99W0WPZO43Q==
 
 find-up@^2.0.0:
   version "2.1.0"
@@ -6781,6 +6801,11 @@ typical@^7.1.1:
   version "7.1.1"
   resolved "https://registry.yarnpkg.com/typical/-/typical-7.1.1.tgz#ba177ab7ab103b78534463ffa4c0c9754523ac1f"
   integrity sha512-T+tKVNs6Wu7IWiAce5BgMd7OZfNYUndHwc5MknN+UHOudi7sGZzuHdCadllRuqJ3fPtgFtIH9+lt9qRv6lmpfA==
+
+typical@^7.3.0:
+  version "7.3.0"
+  resolved "https://registry.yarnpkg.com/typical/-/typical-7.3.0.tgz#930376be344228709f134613911fa22aa09617a4"
+  integrity sha512-ya4mg/30vm+DOWfBg4YK3j2WD6TWtRkCbasOJr40CseYENzCUby/7rIvXA99JGsQHeNxLbnXdyLLxKSv3tauFw==
 
 uglify-js@^3.1.4:
   version "3.18.0"
